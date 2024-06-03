@@ -1,0 +1,2706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6E2DE448364EA896869ADF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C79D9BD0742CE936B6982 /* libc++.tbd */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1E01C81C2511208400FEF824 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C81B2511208400FEF824 /* URL+Extensions.swift */; };
+		1E01C8212511301400FEF824 /* PushResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8202511301400FEF824 /* PushResponse.swift */; };
+		1E01C8252511303100FEF824 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8242511303100FEF824 /* Notification.swift */; };
+		1E01C8272511303900FEF824 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8262511303900FEF824 /* Payload.swift */; };
+		1E01C8292511304100FEF824 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8282511304100FEF824 /* Sender.swift */; };
+		1E01C82B2511335A00FEF824 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82A2511335A00FEF824 /* Message.swift */; };
+		1E01C82D2511337700FEF824 /* RoomKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82C2511337700FEF824 /* RoomKey.swift */; };
+		1E0426E6251A5467008F022C /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0426E5251A5467008F022C /* RoomType.swift */; };
+		1E0426E7251A54B4008F022C /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0426E5251A5467008F022C /* RoomType.swift */; };
+		1E068CFE24FD2DC700A0FFC1 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E068CFD24FD2DC700A0FFC1 /* AppGroup.swift */; };
+		1E068CFF24FD2DC700A0FFC1 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E068CFD24FD2DC700A0FFC1 /* AppGroup.swift */; };
+		1E068D0124FD2E0500A0FFC1 /* AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E068D0024FD2E0500A0FFC1 /* AppGroup.m */; };
+		1E068D0224FD2E0500A0FFC1 /* AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E068D0024FD2E0500A0FFC1 /* AppGroup.m */; };
+		1E1C2F80250FCB69005DCE7D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C2F7F250FCB69005DCE7D /* Database.swift */; };
+		1E1EA80A2326CD2200E22452 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8092326CD2200E22452 /* AVFoundation.framework */; };
+		1E1EA80C2326CD2800E22452 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80B2326CD2800E22452 /* AudioToolbox.framework */; };
+		1E1EA80E2326CD2F00E22452 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80D2326CD2F00E22452 /* CoreGraphics.framework */; };
+		1E1EA8102326CD3300E22452 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80F2326CD3300E22452 /* GLKit.framework */; };
+		1E1EA8122326CD3900E22452 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8112326CD3900E22452 /* CoreAudio.framework */; };
+		1E1EA8142326CD3E00E22452 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8132326CD3E00E22452 /* CoreVideo.framework */; };
+		1E1EA8162326CD4500E22452 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8152326CD4500E22452 /* VideoToolbox.framework */; };
+		1E1EA8182326CD4B00E22452 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8172326CD4B00E22452 /* libc.tbd */; };
+		1E1EA81A2326CD5100E22452 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8192326CD5100E22452 /* libsqlite3.tbd */; };
+		1E25743422CBA2CF005A877F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD4853222860DE00442C55 /* JavaScriptCore.framework */; };
+		1E2F615B25128F9A00871711 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615A25128F9A00871711 /* API.swift */; };
+		1E2F615D25128FA300871711 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615C25128FA300871711 /* Response.swift */; };
+		1E2F61642512955D00871711 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61632512955D00871711 /* HTTPMethod.swift */; };
+		1E2F61662512958900871711 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61652512958900871711 /* Push.swift */; };
+		1E470E832513A71E00E3DD1D /* RocketChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470E822513A71E00E3DD1D /* RocketChat.swift */; };
+		1E51D962251263CD00DC95DE /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D961251263CD00DC95DE /* MessageType.swift */; };
+		1E51D965251263D600DC95DE /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D964251263D600DC95DE /* NotificationType.swift */; };
+		1E598AE42515057D002BDFBD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE32515057D002BDFBD /* Date+Extensions.swift */; };
+		1E598AE725150660002BDFBD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE625150660002BDFBD /* Data+Extensions.swift */; };
+		1E598AE925151A63002BDFBD /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE825151A63002BDFBD /* SendMessage.swift */; };
+		1E67380424DC529B0009E081 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67380324DC529B0009E081 /* String+Extensions.swift */; };
+		1E680ED92512990700C9257A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E680ED82512990700C9257A /* Request.swift */; };
+		1E76CBC2251529560067298C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8EF712510F1EE00F352B7 /* Storage.swift */; };
+		1E76CBC325152A460067298C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67380324DC529B0009E081 /* String+Extensions.swift */; };
+		1E76CBC725152BFF0067298C /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8262511303900FEF824 /* Payload.swift */; };
+		1E76CBC825152C070067298C /* RocketChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470E822513A71E00E3DD1D /* RocketChat.swift */; };
+		1E76CBC925152C1F0067298C /* PushResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8202511301400FEF824 /* PushResponse.swift */; };
+		1E76CBCA25152C220067298C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8242511303100FEF824 /* Notification.swift */; };
+		1E76CBCB25152C250067298C /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8282511304100FEF824 /* Sender.swift */; };
+		1E76CBCC25152C290067298C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82A2511335A00FEF824 /* Message.swift */; };
+		1E76CBCD25152C2C0067298C /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D961251263CD00DC95DE /* MessageType.swift */; };
+		1E76CBCE25152C2F0067298C /* RoomKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82C2511337700FEF824 /* RoomKey.swift */; };
+		1E76CBCF25152C310067298C /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D964251263D600DC95DE /* NotificationType.swift */; };
+		1E76CBD025152C6E0067298C /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C81B2511208400FEF824 /* URL+Extensions.swift */; };
+		1E76CBD125152C710067298C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE32515057D002BDFBD /* Date+Extensions.swift */; };
+		1E76CBD225152C730067298C /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE625150660002BDFBD /* Data+Extensions.swift */; };
+		1E76CBD325152C770067298C /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5FBD0250C109E00614FEA /* Encryption.swift */; };
+		1E76CBD425152C790067298C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C2F7F250FCB69005DCE7D /* Database.swift */; };
+		1E76CBD525152C7F0067298C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615A25128F9A00871711 /* API.swift */; };
+		1E76CBD625152C820067298C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615C25128FA300871711 /* Response.swift */; };
+		1E76CBD725152C840067298C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61632512955D00871711 /* HTTPMethod.swift */; };
+		1E76CBD825152C870067298C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E680ED82512990700C9257A /* Request.swift */; };
+		1E76CBD925152C8C0067298C /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61652512958900871711 /* Push.swift */; };
+		1E76CBDA25152C8E0067298C /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE825151A63002BDFBD /* SendMessage.swift */; };
+		1EB8EF722510F1EE00F352B7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8EF712510F1EE00F352B7 /* Storage.swift */; };
+		1EC6ACB722CB9FC300A41C61 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC6ACB522CB9FC300A41C61 /* MainInterface.storyboard */; };
+		1EC6ACBB22CB9FC300A41C61 /* ShareRocketChatRN.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EC6ACB022CB9FC300A41C61 /* ShareRocketChatRN.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EC6ACF622CBA01500A41C61 /* ShareRocketChatRN.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC6ACF522CBA01500A41C61 /* ShareRocketChatRN.m */; };
+		1ED00BB12513E04400A1331F /* ReplyNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED00BB02513E04400A1331F /* ReplyNotification.swift */; };
+		1EF5FBD1250C109E00614FEA /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5FBD0250C109E00614FEA /* Encryption.swift */; };
+		1EFEB59C2493B6640072EDC0 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EFEB5952493B6640072EDC0 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		24A2AEF2383D44B586D31C01 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BB44DD4855498082A744AD /* libz.tbd */; };
+		33814D0E2BDB41440074EBA4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 33814D0C2BDA48C00074EBA4 /* PrivacyInfo.xcprivacy */; };
+		33814D122BDDF2B20074EBA4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 33814D112BDDF2B20074EBA4 /* PrivacyInfo.xcprivacy */; };
+		33814D142BDDF2C00074EBA4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 33814D132BDDF2C00074EBA4 /* PrivacyInfo.xcprivacy */; };
+		33B38EA92BA67139000A05DA /* incallmanager_ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA62BA67139000A05DA /* incallmanager_ringtone.mp3 */; };
+		33B38EAA2BA67139000A05DA /* incallmanager_ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA62BA67139000A05DA /* incallmanager_ringtone.mp3 */; };
+		33B38EAB2BA67139000A05DA /* incallmanager_ringback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA72BA67139000A05DA /* incallmanager_ringback.mp3 */; };
+		33B38EAC2BA67139000A05DA /* incallmanager_ringback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA72BA67139000A05DA /* incallmanager_ringback.mp3 */; };
+		33B38EAD2BA67139000A05DA /* incallmanager_busytone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA82BA67139000A05DA /* incallmanager_busytone.mp3 */; };
+		33B38EAE2BA67139000A05DA /* incallmanager_busytone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33B38EA82BA67139000A05DA /* incallmanager_busytone.mp3 */; };
+		33D578ED2BEDBC6300F7B04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33D578EC2BEDBC6300F7B04B /* GoogleService-Info.plist */; };
+		33DBC4422B1499940047962F /* ServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DBC4412B1499940047962F /* ServiceExtension.m */; };
+		33DBC4462B15DA940047962F /* wx_calling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33DBC4452B15DA940047962F /* wx_calling.wav */; };
+		33DBC4472B15DA940047962F /* wx_calling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33DBC4452B15DA940047962F /* wx_calling.wav */; };
+		34163CAB487343ABBE0E3C31 /* libPods-defaults-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E371D4CB3AD4F71CB94DDD /* libPods-defaults-NotificationService.a */; };
+		4C4C8603EF082F0A33A95522 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5C142B655F8EFD006792C /* ExpoModulesProvider.swift */; };
+		69EDC9859F714B08A3ED2F1D /* libPods-defaults-Rocket.Chat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21765FC7E55F90E9A66DD411 /* libPods-defaults-Rocket.Chat.a */; };
+		7A006F14229C83B600803143 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A006F13229C83B600803143 /* GoogleService-Info.plist */; };
+		7A0D62D2242AB187006D5C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0D62D1242AB187006D5C06 /* LaunchScreen.storyboard */; };
+		7A14FCED257FEB3A005BDCD4 /* Experimental.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A14FCEC257FEB3A005BDCD4 /* Experimental.xcassets */; };
+		7A14FCF4257FEB59005BDCD4 /* Official.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A14FCF3257FEB59005BDCD4 /* Official.xcassets */; };
+		7A610CD227ECE38100B8ABDD /* custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A610CD127ECE38100B8ABDD /* custom.ttf */; };
+		7A610CD327ECE38100B8ABDD /* custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A610CD127ECE38100B8ABDD /* custom.ttf */; };
+		7A610CD427ECE38100B8ABDD /* custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A610CD127ECE38100B8ABDD /* custom.ttf */; };
+		7A610CD527ECE38100B8ABDD /* custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A610CD127ECE38100B8ABDD /* custom.ttf */; };
+		7A92554628777E0100EC3DA3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A92554528777E0100EC3DA3 /* AppDelegate.mm */; };
+		7A92554728777E0100EC3DA3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A92554528777E0100EC3DA3 /* AppDelegate.mm */; };
+		7AAB3E15257E6A6E00707CF6 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8282511304100FEF824 /* Sender.swift */; };
+		7AAB3E16257E6A6E00707CF6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E680ED82512990700C9257A /* Request.swift */; };
+		7AAB3E17257E6A6E00707CF6 /* ReplyNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED00BB02513E04400A1331F /* ReplyNotification.swift */; };
+		7AAB3E18257E6A6E00707CF6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8EF712510F1EE00F352B7 /* Storage.swift */; };
+		7AAB3E19257E6A6E00707CF6 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61652512958900871711 /* Push.swift */; };
+		7AAB3E1A257E6A6E00707CF6 /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0426E5251A5467008F022C /* RoomType.swift */; };
+		7AAB3E1B257E6A6E00707CF6 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D961251263CD00DC95DE /* MessageType.swift */; };
+		7AAB3E1C257E6A6E00707CF6 /* PushResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8202511301400FEF824 /* PushResponse.swift */; };
+		7AAB3E1E257E6A6E00707CF6 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5FBD0250C109E00614FEA /* Encryption.swift */; };
+		7AAB3E1F257E6A6E00707CF6 /* RocketChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E470E822513A71E00E3DD1D /* RocketChat.swift */; };
+		7AAB3E20257E6A6E00707CF6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F61632512955D00871711 /* HTTPMethod.swift */; };
+		7AAB3E21257E6A6E00707CF6 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8262511303900FEF824 /* Payload.swift */; };
+		7AAB3E23257E6A6E00707CF6 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE625150660002BDFBD /* Data+Extensions.swift */; };
+		7AAB3E24257E6A6E00707CF6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE32515057D002BDFBD /* Date+Extensions.swift */; };
+		7AAB3E25257E6A6E00707CF6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C2F7F250FCB69005DCE7D /* Database.swift */; };
+		7AAB3E26257E6A6E00707CF6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67380324DC529B0009E081 /* String+Extensions.swift */; };
+		7AAB3E27257E6A6E00707CF6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8242511303100FEF824 /* Notification.swift */; };
+		7AAB3E28257E6A6E00707CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615A25128F9A00871711 /* API.swift */; };
+		7AAB3E29257E6A6E00707CF6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F615C25128FA300871711 /* Response.swift */; };
+		7AAB3E2A257E6A6E00707CF6 /* AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E068D0024FD2E0500A0FFC1 /* AppGroup.m */; };
+		7AAB3E2B257E6A6E00707CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7AAB3E2C257E6A6E00707CF6 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C81B2511208400FEF824 /* URL+Extensions.swift */; };
+		7AAB3E2D257E6A6E00707CF6 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E068CFD24FD2DC700A0FFC1 /* AppGroup.swift */; };
+		7AAB3E2E257E6A6E00707CF6 /* RoomKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82C2511337700FEF824 /* RoomKey.swift */; };
+		7AAB3E2F257E6A6E00707CF6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C82A2511335A00FEF824 /* Message.swift */; };
+		7AAB3E30257E6A6E00707CF6 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51D964251263D600DC95DE /* NotificationType.swift */; };
+		7AAB3E31257E6A6E00707CF6 /* SendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E598AE825151A63002BDFBD /* SendMessage.swift */; };
+		7AAB3E33257E6A6E00707CF6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C79D9BD0742CE936B6982 /* libc++.tbd */; };
+		7AAB3E34257E6A6E00707CF6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8192326CD5100E22452 /* libsqlite3.tbd */; };
+		7AAB3E35257E6A6E00707CF6 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8172326CD4B00E22452 /* libc.tbd */; };
+		7AAB3E36257E6A6E00707CF6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8152326CD4500E22452 /* VideoToolbox.framework */; };
+		7AAB3E37257E6A6E00707CF6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8132326CD3E00E22452 /* CoreVideo.framework */; };
+		7AAB3E38257E6A6E00707CF6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8112326CD3900E22452 /* CoreAudio.framework */; };
+		7AAB3E39257E6A6E00707CF6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80F2326CD3300E22452 /* GLKit.framework */; };
+		7AAB3E3A257E6A6E00707CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80D2326CD2F00E22452 /* CoreGraphics.framework */; };
+		7AAB3E3B257E6A6E00707CF6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA80B2326CD2800E22452 /* AudioToolbox.framework */; };
+		7AAB3E3C257E6A6E00707CF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1EA8092326CD2200E22452 /* AVFoundation.framework */; };
+		7AAB3E3D257E6A6E00707CF6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD4853222860DE00442C55 /* JavaScriptCore.framework */; };
+		7AAB3E3E257E6A6E00707CF6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BB44DD4855498082A744AD /* libz.tbd */; };
+		7AAB3E3F257E6A6E00707CF6 /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E862283664608B3894E34 /* libWatermelonDB.a */; };
+		7AAB3E42257E6A6E00707CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		7AAB3E44257E6A6E00707CF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A006F13229C83B600803143 /* GoogleService-Info.plist */; };
+		7AAB3E45257E6A6E00707CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0D62D1242AB187006D5C06 /* LaunchScreen.storyboard */; };
+		7AAB3E49257E6A6E00707CF6 /* ShareRocketChatRN.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EC6ACB022CB9FC300A41C61 /* ShareRocketChatRN.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7AAB3E4A257E6A6E00707CF6 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EFEB5952493B6640072EDC0 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7ACD4897222860DE00442C55 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD4853222860DE00442C55 /* JavaScriptCore.framework */; };
+		7AE10C0628A59530003593CB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE10C0528A59530003593CB /* Inter.ttf */; };
+		7AE10C0728A59530003593CB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE10C0528A59530003593CB /* Inter.ttf */; };
+		7AE10C0828A59530003593CB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE10C0528A59530003593CB /* Inter.ttf */; };
+		85160EB6C143E0493FE5F014 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */; };
+		A18006F16B94399B5B6E6044 /* libPods-defaults-RocketChatRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6B186010ABFF3B4DE0D530 /* libPods-defaults-RocketChatRN.a */; };
+		A8B76A4EB0B28D544F093C8E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		BC404914E86821389EEB543D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */; };
+		D90FC9882B8C982A00455C39 /* NativeToJSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90FC9872B8C982A00455C39 /* NativeToJSManager.m */; };
+		D90FC9892B8C982A00455C39 /* NativeToJSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90FC9872B8C982A00455C39 /* NativeToJSManager.m */; };
+		D944C2D92B47E9BC007F2FED /* libTalkingDataSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFD62B45080B007125E8 /* libTalkingDataSDK.a */; };
+		D944C9202B071B0900B437EA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C91D2B071B0900B437EA /* NotificationService.swift */; };
+		D94D81FB9E10756FAA03F203 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016747EF3B9FED8DE2C9DA14 /* ExpoModulesProvider.swift */; };
+		D992F9EA2B49A7A800D0210F /* RCTTalkingDataSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D998AFD72B45080B007125E8 /* RCTTalkingDataSDK.m */; };
+		D998AFCB2B450711007125E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCA2B450711007125E8 /* SystemConfiguration.framework */; };
+		D998AFCD2B45071C007125E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCC2B45071B007125E8 /* Security.framework */; };
+		D998AFCF2B45072B007125E8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCE2B45072B007125E8 /* CoreTelephony.framework */; };
+		D998AFD02B45073B007125E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCA2B450711007125E8 /* SystemConfiguration.framework */; };
+		D998AFD12B450742007125E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCC2B45071B007125E8 /* Security.framework */; };
+		D998AFD22B45074E007125E8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFCE2B45072B007125E8 /* CoreTelephony.framework */; };
+		D998AFD82B45080B007125E8 /* libTalkingDataSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFD62B45080B007125E8 /* libTalkingDataSDK.a */; };
+		D998AFD92B45080C007125E8 /* RCTTalkingDataSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D998AFD72B45080B007125E8 /* RCTTalkingDataSDK.m */; };
+		D998AFDB2B4541AE007125E8 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDA2B4541AE007125E8 /* AdServices.framework */; };
+		D998AFDD2B4541BA007125E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDC2B4541BA007125E8 /* StoreKit.framework */; };
+		D998AFDF2B4541C6007125E8 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDE2B4541C6007125E8 /* AppTrackingTransparency.framework */; };
+		D998AFE12B4541D0007125E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFE02B4541D0007125E8 /* AdSupport.framework */; };
+		D998AFE22B4541F9007125E8 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDA2B4541AE007125E8 /* AdServices.framework */; };
+		D998AFE32B454200007125E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDC2B4541BA007125E8 /* StoreKit.framework */; };
+		D998AFE42B454208007125E8 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFDE2B4541C6007125E8 /* AppTrackingTransparency.framework */; };
+		D998AFE52B454210007125E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998AFE02B4541D0007125E8 /* AdSupport.framework */; };
+		D9FC09C42A2EC49D00072FBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09C32A2EC49D00072FBB /* GoogleService-Info.plist */; };
+		D9FC09C52A2EC49D00072FBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09C32A2EC49D00072FBB /* GoogleService-Info.plist */; };
+		D9FC09CE2A2F225F00072FBB /* RunInBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09CB2A2F225F00072FBB /* RunInBackground.mp3 */; };
+		D9FC09CF2A2F225F00072FBB /* RunInBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09CB2A2F225F00072FBB /* RunInBackground.mp3 */; };
+		D9FC09D22A2F279400072FBB /* JSToNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D12A2F279400072FBB /* JSToNativeManager.m */; };
+		D9FC09D32A2F279400072FBB /* JSToNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D12A2F279400072FBB /* JSToNativeManager.m */; };
+		D9FC0A3B2A2F280800072FBB /* YBIBVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D62A2F280700072FBB /* YBIBVideoCell.m */; };
+		D9FC0A3C2A2F280800072FBB /* YBIBVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D62A2F280700072FBB /* YBIBVideoCell.m */; };
+		D9FC0A3D2A2F280800072FBB /* YBIBVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D72A2F280700072FBB /* YBIBVideoData.m */; };
+		D9FC0A3E2A2F280800072FBB /* YBIBVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D72A2F280700072FBB /* YBIBVideoData.m */; };
+		D9FC0A3F2A2F280800072FBB /* YBIBVideoTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D82A2F280700072FBB /* YBIBVideoTopBar.m */; };
+		D9FC0A402A2F280800072FBB /* YBIBVideoTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09D82A2F280700072FBB /* YBIBVideoTopBar.m */; };
+		D9FC0A412A2F280800072FBB /* YBIBVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09DA2A2F280700072FBB /* YBIBVideoView.m */; };
+		D9FC0A422A2F280800072FBB /* YBIBVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09DA2A2F280700072FBB /* YBIBVideoView.m */; };
+		D9FC0A432A2F280800072FBB /* YBIBVideoActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09E12A2F280700072FBB /* YBIBVideoActionBar.m */; };
+		D9FC0A442A2F280800072FBB /* YBIBVideoActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09E12A2F280700072FBB /* YBIBVideoActionBar.m */; };
+		D9FC0A452A2F280800072FBB /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09E22A2F280700072FBB /* mute.caf */; };
+		D9FC0A462A2F280800072FBB /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09E22A2F280700072FBB /* mute.caf */; };
+		D9FC0A472A2F280800072FBB /* YBImageBrowserVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09E42A2F280700072FBB /* YBImageBrowserVideo.bundle */; };
+		D9FC0A482A2F280800072FBB /* YBImageBrowserVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FC09E42A2F280700072FBB /* YBImageBrowserVideo.bundle */; };
+		D9FC0A492A2F280800072FBB /* SharkfoodMuteSwitchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09E52A2F280700072FBB /* SharkfoodMuteSwitchDetector.m */; };
+		D9FC0A4A2A2F280800072FBB /* SharkfoodMuteSwitchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09E52A2F280700072FBB /* SharkfoodMuteSwitchDetector.m */; };
+		D9FC0A4B2A2F280800072FBB /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EA2A2F280700072FBB /* YYSpriteSheetImage.m */; };
+		D9FC0A4C2A2F280800072FBB /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EA2A2F280700072FBB /* YYSpriteSheetImage.m */; };
+		D9FC0A4D2A2F280800072FBB /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EC2A2F280700072FBB /* YYImage.m */; };
+		D9FC0A4E2A2F280800072FBB /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EC2A2F280700072FBB /* YYImage.m */; };
+		D9FC0A4F2A2F280800072FBB /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09ED2A2F280700072FBB /* YYImageCoder.m */; };
+		D9FC0A502A2F280800072FBB /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09ED2A2F280700072FBB /* YYImageCoder.m */; };
+		D9FC0A512A2F280800072FBB /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EE2A2F280700072FBB /* YYFrameImage.m */; };
+		D9FC0A522A2F280800072FBB /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EE2A2F280700072FBB /* YYFrameImage.m */; };
+		D9FC0A532A2F280800072FBB /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EF2A2F280700072FBB /* YYAnimatedImageView.m */; };
+		D9FC0A542A2F280800072FBB /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09EF2A2F280700072FBB /* YYAnimatedImageView.m */; };
+		D9FC0A552A2F280800072FBB /* YBIBDefaultWebImageMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09F32A2F280700072FBB /* YBIBDefaultWebImageMediator.m */; };
+		D9FC0A562A2F280800072FBB /* YBIBDefaultWebImageMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09F32A2F280700072FBB /* YBIBDefaultWebImageMediator.m */; };
+		D9FC0A572A2F280800072FBB /* YBImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09F52A2F280700072FBB /* YBImageBrowser.m */; };
+		D9FC0A582A2F280800072FBB /* YBImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC09F52A2F280700072FBB /* YBImageBrowser.m */; };
+		D9FC0A592A2F280800072FBB /* YBIBImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A002A2F280700072FBB /* YBIBImageLayout.m */; };
+		D9FC0A5A2A2F280800072FBB /* YBIBImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A002A2F280700072FBB /* YBIBImageLayout.m */; };
+		D9FC0A5B2A2F280800072FBB /* YBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A022A2F280700072FBB /* YBImage.m */; };
+		D9FC0A5C2A2F280800072FBB /* YBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A022A2F280700072FBB /* YBImage.m */; };
+		D9FC0A5D2A2F280800072FBB /* YBIBInteractionProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A042A2F280700072FBB /* YBIBInteractionProfile.m */; };
+		D9FC0A5E2A2F280800072FBB /* YBIBInteractionProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A042A2F280700072FBB /* YBIBInteractionProfile.m */; };
+		D9FC0A5F2A2F280800072FBB /* YBIBImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A052A2F280700072FBB /* YBIBImageScrollView.m */; };
+		D9FC0A602A2F280800072FBB /* YBIBImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A052A2F280700072FBB /* YBIBImageScrollView.m */; };
+		D9FC0A612A2F280800072FBB /* YBIBImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A072A2F280700072FBB /* YBIBImageCache.m */; };
+		D9FC0A622A2F280800072FBB /* YBIBImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A072A2F280700072FBB /* YBIBImageCache.m */; };
+		D9FC0A632A2F280800072FBB /* YBIBImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A082A2F280700072FBB /* YBIBImageCell.m */; };
+		D9FC0A642A2F280800072FBB /* YBIBImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A082A2F280700072FBB /* YBIBImageCell.m */; };
+		D9FC0A652A2F280800072FBB /* YBIBImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A0A2A2F280700072FBB /* YBIBImageData.m */; };
+		D9FC0A662A2F280800072FBB /* YBIBImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A0A2A2F280700072FBB /* YBIBImageData.m */; };
+		D9FC0A672A2F280800072FBB /* YBIBToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A112A2F280700072FBB /* YBIBToastView.m */; };
+		D9FC0A682A2F280800072FBB /* YBIBToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A112A2F280700072FBB /* YBIBToastView.m */; };
+		D9FC0A692A2F280800072FBB /* YBIBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A122A2F280700072FBB /* YBIBLoadingView.m */; };
+		D9FC0A6A2A2F280800072FBB /* YBIBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A122A2F280700072FBB /* YBIBLoadingView.m */; };
+		D9FC0A6B2A2F280800072FBB /* YBIBAuxiliaryViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A132A2F280700072FBB /* YBIBAuxiliaryViewHandler.m */; };
+		D9FC0A6C2A2F280800072FBB /* YBIBAuxiliaryViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A132A2F280700072FBB /* YBIBAuxiliaryViewHandler.m */; };
+		D9FC0A6D2A2F280800072FBB /* YBIBIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1C2A2F280700072FBB /* YBIBIconManager.m */; };
+		D9FC0A6E2A2F280800072FBB /* YBIBIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1C2A2F280700072FBB /* YBIBIconManager.m */; };
+		D9FC0A6F2A2F280800072FBB /* YBIBSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1D2A2F280700072FBB /* YBIBSentinel.m */; };
+		D9FC0A702A2F280800072FBB /* YBIBSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1D2A2F280700072FBB /* YBIBSentinel.m */; };
+		D9FC0A712A2F280800072FBB /* YBIBCopywriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1E2A2F280700072FBB /* YBIBCopywriter.m */; };
+		D9FC0A722A2F280800072FBB /* YBIBCopywriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1E2A2F280700072FBB /* YBIBCopywriter.m */; };
+		D9FC0A732A2F280800072FBB /* YBIBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1F2A2F280700072FBB /* YBIBUtilities.m */; };
+		D9FC0A742A2F280800072FBB /* YBIBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A1F2A2F280700072FBB /* YBIBUtilities.m */; };
+		D9FC0A752A2F280800072FBB /* YBIBPhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A202A2F280700072FBB /* YBIBPhotoAlbumManager.m */; };
+		D9FC0A762A2F280800072FBB /* YBIBPhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A202A2F280700072FBB /* YBIBPhotoAlbumManager.m */; };
+		D9FC0A772A2F280800072FBB /* YBIBTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A262A2F280700072FBB /* YBIBTopView.m */; };
+		D9FC0A782A2F280800072FBB /* YBIBTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A262A2F280700072FBB /* YBIBTopView.m */; };
+		D9FC0A792A2F280800072FBB /* YBIBToolViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A272A2F280700072FBB /* YBIBToolViewHandler.m */; };
+		D9FC0A7A2A2F280800072FBB /* YBIBToolViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A272A2F280700072FBB /* YBIBToolViewHandler.m */; };
+		D9FC0A7B2A2F280800072FBB /* YBIBSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A282A2F280700072FBB /* YBIBSheetView.m */; };
+		D9FC0A7C2A2F280800072FBB /* YBIBSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A282A2F280700072FBB /* YBIBSheetView.m */; };
+		D9FC0A7D2A2F280800072FBB /* YBIBScreenRotationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2A2A2F280700072FBB /* YBIBScreenRotationHandler.m */; };
+		D9FC0A7E2A2F280800072FBB /* YBIBScreenRotationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2A2A2F280700072FBB /* YBIBScreenRotationHandler.m */; };
+		D9FC0A7F2A2F280800072FBB /* YBIBContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2B2A2F280700072FBB /* YBIBContainerView.m */; };
+		D9FC0A802A2F280800072FBB /* YBIBContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2B2A2F280700072FBB /* YBIBContainerView.m */; };
+		D9FC0A812A2F280800072FBB /* YBIBDataMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2D2A2F280700072FBB /* YBIBDataMediator.m */; };
+		D9FC0A822A2F280800072FBB /* YBIBDataMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2D2A2F280700072FBB /* YBIBDataMediator.m */; };
+		D9FC0A832A2F280800072FBB /* YBIBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2E2A2F280700072FBB /* YBIBCollectionView.m */; };
+		D9FC0A842A2F280800072FBB /* YBIBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2E2A2F280700072FBB /* YBIBCollectionView.m */; };
+		D9FC0A852A2F280800072FBB /* YBIBCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2F2A2F280700072FBB /* YBIBCollectionViewLayout.m */; };
+		D9FC0A862A2F280800072FBB /* YBIBCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A2F2A2F280700072FBB /* YBIBCollectionViewLayout.m */; };
+		D9FC0A872A2F280800072FBB /* YBIBAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A312A2F280700072FBB /* YBIBAnimatedTransition.m */; };
+		D9FC0A882A2F280800072FBB /* YBIBAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A312A2F280700072FBB /* YBIBAnimatedTransition.m */; };
+		D9FC0A892A2F280800072FBB /* NSObject+YBImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A352A2F280700072FBB /* NSObject+YBImageBrowser.m */; };
+		D9FC0A8A2A2F280800072FBB /* NSObject+YBImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC0A352A2F280700072FBB /* NSObject+YBImageBrowser.m */; };
+		D9FC0A8B2A2F280800072FBB /* YBImageBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FC0A3A2A2F280700072FBB /* YBImageBrowser.bundle */; };
+		D9FC0A8C2A2F280800072FBB /* YBImageBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FC0A3A2A2F280700072FBB /* YBImageBrowser.bundle */; };
+		DD2BA30A89E64F189C2C24AC /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E862283664608B3894E34 /* libWatermelonDB.a */; };
+		E0DCA7D422A2A2B9BF997287 /* libPods-defaults-ShareRocketChatRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A663AD48B38352AB11A7BEDA /* libPods-defaults-ShareRocketChatRN.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC6ACB922CB9FC300A41C61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC6ACAF22CB9FC300A41C61;
+			remoteInfo = ShareRocketChatRN;
+		};
+		1EFEB59A2493B6640072EDC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFEB5942493B6640072EDC0;
+			remoteInfo = NotificationService;
+		};
+		7AAB3E0F257E6A6E00707CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC6ACAF22CB9FC300A41C61;
+			remoteInfo = ShareRocketChatRN;
+		};
+		7AAB3E11257E6A6E00707CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFEB5942493B6640072EDC0;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EC6ACF422CB9FC300A41C61 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EC6ACBB22CB9FC300A41C61 /* ShareRocketChatRN.appex in Embed App Extensions */,
+				1EFEB59C2493B6640072EDC0 /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAB3E48257E6A6E00707CF6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7AAB3E49257E6A6E00707CF6 /* ShareRocketChatRN.appex in Embed App Extensions */,
+				7AAB3E4A257E6A6E00707CF6 /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		016747EF3B9FED8DE2C9DA14 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-ShareRocketChatRN/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		06BB44DD4855498082A744AD /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		13B07F961A680F5B00A75B9A /* Rocket.Chat Experimental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocket.Chat Experimental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RocketChatRN/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RocketChatRN/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RocketChatRN/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RocketChatRN/main.m; sourceTree = "<group>"; };
+		194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-NotificationService/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		1E01C81B2511208400FEF824 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		1E01C8202511301400FEF824 /* PushResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushResponse.swift; sourceTree = "<group>"; };
+		1E01C8242511303100FEF824 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		1E01C8262511303900FEF824 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		1E01C8282511304100FEF824 /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		1E01C82A2511335A00FEF824 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1E01C82C2511337700FEF824 /* RoomKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomKey.swift; sourceTree = "<group>"; };
+		1E0426E5251A5467008F022C /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		1E068CFD24FD2DC700A0FFC1 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		1E068D0024FD2E0500A0FFC1 /* AppGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppGroup.m; sourceTree = "<group>"; };
+		1E1C2F7F250FCB69005DCE7D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		1E1EA8092326CD2200E22452 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1E1EA80B2326CD2800E22452 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1E1EA80D2326CD2F00E22452 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1E1EA80F2326CD3300E22452 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1E1EA8112326CD3900E22452 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1E1EA8132326CD3E00E22452 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1E1EA8152326CD4500E22452 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1E1EA8172326CD4B00E22452 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		1E1EA8192326CD5100E22452 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1E2F615A25128F9A00871711 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1E2F615C25128FA300871711 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1E2F61632512955D00871711 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1E2F61652512958900871711 /* Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
+		1E470E822513A71E00E3DD1D /* RocketChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketChat.swift; sourceTree = "<group>"; };
+		1E51D961251263CD00DC95DE /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		1E51D964251263D600DC95DE /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		1E598AE32515057D002BDFBD /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		1E598AE625150660002BDFBD /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		1E598AE825151A63002BDFBD /* SendMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessage.swift; sourceTree = "<group>"; };
+		1E67380324DC529B0009E081 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		1E680ED82512990700C9257A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1EB8EF712510F1EE00F352B7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		1EC6ACB022CB9FC300A41C61 /* ShareRocketChatRN.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareRocketChatRN.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC6ACB622CB9FC300A41C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1EC6ACB822CB9FC300A41C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC6ACF522CBA01500A41C61 /* ShareRocketChatRN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareRocketChatRN.m; sourceTree = "<group>"; };
+		1EC6AD6022CBA20C00A41C61 /* ShareRocketChatRN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareRocketChatRN.entitlements; sourceTree = "<group>"; };
+		1ED00BB02513E04400A1331F /* ReplyNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyNotification.swift; sourceTree = "<group>"; };
+		1EF5FBD0250C109E00614FEA /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		1EFEB5952493B6640072EDC0 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFEB5992493B6640072EDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFEB5A12493B67D0072EDC0 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		21765FC7E55F90E9A66DD411 /* libPods-defaults-Rocket.Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-Rocket.Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F4C7CB38DCAFFB5D2F4D2 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
+		33814D0C2BDA48C00074EBA4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		33814D112BDDF2B20074EBA4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		33814D132BDDF2C00074EBA4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		33B38EA62BA67139000A05DA /* incallmanager_ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incallmanager_ringtone.mp3; sourceTree = "<group>"; };
+		33B38EA72BA67139000A05DA /* incallmanager_ringback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incallmanager_ringback.mp3; sourceTree = "<group>"; };
+		33B38EA82BA67139000A05DA /* incallmanager_busytone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incallmanager_busytone.mp3; sourceTree = "<group>"; };
+		33D578EC2BEDBC6300F7B04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33DBC4402B1499940047962F /* ServiceExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceExtension.h; sourceTree = "<group>"; };
+		33DBC4412B1499940047962F /* ServiceExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceExtension.m; sourceTree = "<group>"; };
+		33DBC4452B15DA940047962F /* wx_calling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wx_calling.wav; sourceTree = "<group>"; };
+		391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-Rocket.Chat/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		41E371D4CB3AD4F71CB94DDD /* libPods-defaults-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D5C142B655F8EFD006792C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-RocketChatRN/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		60B2A6A31FC4588700BD58E5 /* RocketChatRN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RocketChatRN.entitlements; path = RocketChatRN/RocketChatRN.entitlements; sourceTree = "<group>"; };
+		65BE95C338CBD0F2ED8A8057 /* Pods-defaults-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		716932D06209A9C4288CEB96 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
+		7A006F13229C83B600803143 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A0D62D1242AB187006D5C06 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A14FCEC257FEB3A005BDCD4 /* Experimental.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Experimental.xcassets; sourceTree = "<group>"; };
+		7A14FCF3257FEB59005BDCD4 /* Official.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Official.xcassets; sourceTree = "<group>"; };
+		7A610CD127ECE38100B8ABDD /* custom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom.ttf; sourceTree = "<group>"; };
+		7A92554528777E0100EC3DA3 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RocketChatRN/AppDelegate.mm; sourceTree = "<group>"; };
+		7AAA749C23043B1D00F1ADE9 /* RocketChatRN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RocketChatRN-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AAB3E52257E6A6E00707CF6 /* Rocket.Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rocket.Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACD4853222860DE00442C55 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7AE10C0528A59530003593CB /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		9E11B71CA7EFE12116E92150 /* Pods-defaults-RocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
+		A663AD48B38352AB11A7BEDA /* libPods-defaults-ShareRocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-ShareRocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A869A59810A3929091F67649 /* Pods-defaults-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		AA1D5014ABFC384B8CAFEBA0 /* Pods-defaults-Rocket.Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.debug.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		B37C79D9BD0742CE936B6982 /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BA7E862283664608B3894E34 /* libWatermelonDB.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libWatermelonDB.a; sourceTree = "<group>"; };
+		BE1E95534E2C71BCEB81ABDB /* Pods-defaults-RocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A3AF756639066F66137F91 /* Pods-defaults-Rocket.Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.release.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.release.xcconfig"; sourceTree = "<group>"; };
+		D90FC9862B8C982900455C39 /* NativeToJSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeToJSManager.h; sourceTree = "<group>"; };
+		D90FC9872B8C982A00455C39 /* NativeToJSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeToJSManager.m; sourceTree = "<group>"; };
+		D944C91C2B071B0900B437EA /* NotificationService-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NotificationService-Bridging-Header.h"; sourceTree = "<group>"; };
+		D944C91D2B071B0900B437EA /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D998AFCA2B450711007125E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D998AFCC2B45071B007125E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D998AFCE2B45072B007125E8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D998AFD42B45080B007125E8 /* TalkingDataSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingDataSDK.h; sourceTree = "<group>"; };
+		D998AFD52B45080B007125E8 /* RCTTalkingDataSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTalkingDataSDK.h; sourceTree = "<group>"; };
+		D998AFD62B45080B007125E8 /* libTalkingDataSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingDataSDK.a; sourceTree = "<group>"; };
+		D998AFD72B45080B007125E8 /* RCTTalkingDataSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTalkingDataSDK.m; sourceTree = "<group>"; };
+		D998AFDA2B4541AE007125E8 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		D998AFDC2B4541BA007125E8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D998AFDE2B4541C6007125E8 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		D998AFE02B4541D0007125E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D9FC09C32A2EC49D00072FBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9FC09CB2A2F225F00072FBB /* RunInBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RunInBackground.mp3; sourceTree = "<group>"; };
+		D9FC09D02A2F279400072FBB /* JSToNativeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSToNativeManager.h; sourceTree = "<group>"; };
+		D9FC09D12A2F279400072FBB /* JSToNativeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSToNativeManager.m; sourceTree = "<group>"; };
+		D9FC09D62A2F280700072FBB /* YBIBVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBVideoCell.m; sourceTree = "<group>"; };
+		D9FC09D72A2F280700072FBB /* YBIBVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBVideoData.m; sourceTree = "<group>"; };
+		D9FC09D82A2F280700072FBB /* YBIBVideoTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBVideoTopBar.m; sourceTree = "<group>"; };
+		D9FC09D92A2F280700072FBB /* YBIBVideoActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBVideoActionBar.h; sourceTree = "<group>"; };
+		D9FC09DA2A2F280700072FBB /* YBIBVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBVideoView.m; sourceTree = "<group>"; };
+		D9FC09DB2A2F280700072FBB /* SharkfoodMuteSwitchDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkfoodMuteSwitchDetector.h; sourceTree = "<group>"; };
+		D9FC09DC2A2F280700072FBB /* YBIBVideoData+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBIBVideoData+Internal.h"; sourceTree = "<group>"; };
+		D9FC09DD2A2F280700072FBB /* YBIBVideoCell+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBIBVideoCell+Internal.h"; sourceTree = "<group>"; };
+		D9FC09DE2A2F280700072FBB /* YBIBVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBVideoData.h; sourceTree = "<group>"; };
+		D9FC09DF2A2F280700072FBB /* YBIBVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBVideoCell.h; sourceTree = "<group>"; };
+		D9FC09E02A2F280700072FBB /* YBIBVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBVideoView.h; sourceTree = "<group>"; };
+		D9FC09E12A2F280700072FBB /* YBIBVideoActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBVideoActionBar.m; sourceTree = "<group>"; };
+		D9FC09E22A2F280700072FBB /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
+		D9FC09E32A2F280700072FBB /* YBIBVideoTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBVideoTopBar.h; sourceTree = "<group>"; };
+		D9FC09E42A2F280700072FBB /* YBImageBrowserVideo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YBImageBrowserVideo.bundle; sourceTree = "<group>"; };
+		D9FC09E52A2F280700072FBB /* SharkfoodMuteSwitchDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkfoodMuteSwitchDetector.m; sourceTree = "<group>"; };
+		D9FC09E72A2F280700072FBB /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		D9FC09E82A2F280700072FBB /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		D9FC09E92A2F280700072FBB /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		D9FC09EA2A2F280700072FBB /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		D9FC09EB2A2F280700072FBB /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		D9FC09EC2A2F280700072FBB /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		D9FC09ED2A2F280700072FBB /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		D9FC09EE2A2F280700072FBB /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		D9FC09EF2A2F280700072FBB /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		D9FC09F02A2F280700072FBB /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		D9FC09F22A2F280700072FBB /* YBIBDefaultWebImageMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBDefaultWebImageMediator.h; sourceTree = "<group>"; };
+		D9FC09F32A2F280700072FBB /* YBIBDefaultWebImageMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBDefaultWebImageMediator.m; sourceTree = "<group>"; };
+		D9FC09F42A2F280700072FBB /* YBIBWebImageMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBWebImageMediator.h; sourceTree = "<group>"; };
+		D9FC09F52A2F280700072FBB /* YBImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBImageBrowser.m; sourceTree = "<group>"; };
+		D9FC09F72A2F280700072FBB /* YBIBOrientationReceiveProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBOrientationReceiveProtocol.h; sourceTree = "<group>"; };
+		D9FC09F82A2F280700072FBB /* YBImageBrowserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBImageBrowserDataSource.h; sourceTree = "<group>"; };
+		D9FC09F92A2F280700072FBB /* YBIBOperateBrowserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBOperateBrowserProtocol.h; sourceTree = "<group>"; };
+		D9FC09FA2A2F280700072FBB /* YBIBCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBCellProtocol.h; sourceTree = "<group>"; };
+		D9FC09FB2A2F280700072FBB /* YBImageBrowserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBImageBrowserDelegate.h; sourceTree = "<group>"; };
+		D9FC09FC2A2F280700072FBB /* YBIBDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBDataProtocol.h; sourceTree = "<group>"; };
+		D9FC09FD2A2F280700072FBB /* YBIBGetBaseInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBGetBaseInfoProtocol.h; sourceTree = "<group>"; };
+		D9FC09FF2A2F280700072FBB /* YBIBImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBImageCache.h; sourceTree = "<group>"; };
+		D9FC0A002A2F280700072FBB /* YBIBImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBImageLayout.m; sourceTree = "<group>"; };
+		D9FC0A012A2F280700072FBB /* YBIBImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBImageData.h; sourceTree = "<group>"; };
+		D9FC0A022A2F280700072FBB /* YBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBImage.m; sourceTree = "<group>"; };
+		D9FC0A032A2F280700072FBB /* YBIBImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBImageCell.h; sourceTree = "<group>"; };
+		D9FC0A042A2F280700072FBB /* YBIBInteractionProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBInteractionProfile.m; sourceTree = "<group>"; };
+		D9FC0A052A2F280700072FBB /* YBIBImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBImageScrollView.m; sourceTree = "<group>"; };
+		D9FC0A062A2F280700072FBB /* YBIBImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBImageLayout.h; sourceTree = "<group>"; };
+		D9FC0A072A2F280700072FBB /* YBIBImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBImageCache.m; sourceTree = "<group>"; };
+		D9FC0A082A2F280700072FBB /* YBIBImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBImageCell.m; sourceTree = "<group>"; };
+		D9FC0A092A2F280700072FBB /* YBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBImage.h; sourceTree = "<group>"; };
+		D9FC0A0A2A2F280700072FBB /* YBIBImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBImageData.m; sourceTree = "<group>"; };
+		D9FC0A0B2A2F280700072FBB /* YBIBInteractionProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBInteractionProfile.h; sourceTree = "<group>"; };
+		D9FC0A0C2A2F280700072FBB /* YBIBImageCell+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBIBImageCell+Internal.h"; sourceTree = "<group>"; };
+		D9FC0A0D2A2F280700072FBB /* YBIBImageData+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBIBImageData+Internal.h"; sourceTree = "<group>"; };
+		D9FC0A0E2A2F280700072FBB /* YBIBImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBImageScrollView.h; sourceTree = "<group>"; };
+		D9FC0A0F2A2F280700072FBB /* YBIBImageCache+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBIBImageCache+Internal.h"; sourceTree = "<group>"; };
+		D9FC0A112A2F280700072FBB /* YBIBToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBToastView.m; sourceTree = "<group>"; };
+		D9FC0A122A2F280700072FBB /* YBIBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBLoadingView.m; sourceTree = "<group>"; };
+		D9FC0A132A2F280700072FBB /* YBIBAuxiliaryViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBAuxiliaryViewHandler.m; sourceTree = "<group>"; };
+		D9FC0A142A2F280700072FBB /* YBIBToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBToastView.h; sourceTree = "<group>"; };
+		D9FC0A152A2F280700072FBB /* YBIBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBLoadingView.h; sourceTree = "<group>"; };
+		D9FC0A162A2F280700072FBB /* YBIBAuxiliaryViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBAuxiliaryViewHandler.h; sourceTree = "<group>"; };
+		D9FC0A182A2F280700072FBB /* YBIBSentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBSentinel.h; sourceTree = "<group>"; };
+		D9FC0A192A2F280700072FBB /* YBIBCopywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBCopywriter.h; sourceTree = "<group>"; };
+		D9FC0A1A2A2F280700072FBB /* YBIBUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBUtilities.h; sourceTree = "<group>"; };
+		D9FC0A1B2A2F280700072FBB /* YBIBPhotoAlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBPhotoAlbumManager.h; sourceTree = "<group>"; };
+		D9FC0A1C2A2F280700072FBB /* YBIBIconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBIconManager.m; sourceTree = "<group>"; };
+		D9FC0A1D2A2F280700072FBB /* YBIBSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBSentinel.m; sourceTree = "<group>"; };
+		D9FC0A1E2A2F280700072FBB /* YBIBCopywriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBCopywriter.m; sourceTree = "<group>"; };
+		D9FC0A1F2A2F280700072FBB /* YBIBUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBUtilities.m; sourceTree = "<group>"; };
+		D9FC0A202A2F280700072FBB /* YBIBPhotoAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBPhotoAlbumManager.m; sourceTree = "<group>"; };
+		D9FC0A212A2F280700072FBB /* YBIBIconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBIconManager.h; sourceTree = "<group>"; };
+		D9FC0A232A2F280700072FBB /* YBIBTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBTopView.h; sourceTree = "<group>"; };
+		D9FC0A242A2F280700072FBB /* YBIBToolViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBToolViewHandler.h; sourceTree = "<group>"; };
+		D9FC0A252A2F280700072FBB /* YBIBSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBSheetView.h; sourceTree = "<group>"; };
+		D9FC0A262A2F280700072FBB /* YBIBTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBTopView.m; sourceTree = "<group>"; };
+		D9FC0A272A2F280700072FBB /* YBIBToolViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBToolViewHandler.m; sourceTree = "<group>"; };
+		D9FC0A282A2F280700072FBB /* YBIBSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBSheetView.m; sourceTree = "<group>"; };
+		D9FC0A2A2A2F280700072FBB /* YBIBScreenRotationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBScreenRotationHandler.m; sourceTree = "<group>"; };
+		D9FC0A2B2A2F280700072FBB /* YBIBContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBContainerView.m; sourceTree = "<group>"; };
+		D9FC0A2C2A2F280700072FBB /* NSObject+YBImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YBImageBrowser.h"; sourceTree = "<group>"; };
+		D9FC0A2D2A2F280700072FBB /* YBIBDataMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBDataMediator.m; sourceTree = "<group>"; };
+		D9FC0A2E2A2F280700072FBB /* YBIBCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBCollectionView.m; sourceTree = "<group>"; };
+		D9FC0A2F2A2F280700072FBB /* YBIBCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBCollectionViewLayout.m; sourceTree = "<group>"; };
+		D9FC0A302A2F280700072FBB /* YBImageBrowser+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBImageBrowser+Internal.h"; sourceTree = "<group>"; };
+		D9FC0A312A2F280700072FBB /* YBIBAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBIBAnimatedTransition.m; sourceTree = "<group>"; };
+		D9FC0A322A2F280700072FBB /* YBIBContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBContainerView.h; sourceTree = "<group>"; };
+		D9FC0A332A2F280700072FBB /* YBIBScreenRotationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBScreenRotationHandler.h; sourceTree = "<group>"; };
+		D9FC0A342A2F280700072FBB /* YBIBDataMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBDataMediator.h; sourceTree = "<group>"; };
+		D9FC0A352A2F280700072FBB /* NSObject+YBImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YBImageBrowser.m"; sourceTree = "<group>"; };
+		D9FC0A362A2F280700072FBB /* YBIBCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBCollectionViewLayout.h; sourceTree = "<group>"; };
+		D9FC0A372A2F280700072FBB /* YBIBCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBCollectionView.h; sourceTree = "<group>"; };
+		D9FC0A382A2F280700072FBB /* YBIBAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBAnimatedTransition.h; sourceTree = "<group>"; };
+		D9FC0A392A2F280700072FBB /* YBImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBImageBrowser.h; sourceTree = "<group>"; };
+		D9FC0A3A2A2F280700072FBB /* YBImageBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YBImageBrowser.bundle; sourceTree = "<group>"; };
+		DA6B186010ABFF3B4DE0D530 /* libPods-defaults-RocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-RocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D998AFD22B45074E007125E8 /* CoreTelephony.framework in Frameworks */,
+				D998AFE52B454210007125E8 /* AdSupport.framework in Frameworks */,
+				D998AFE42B454208007125E8 /* AppTrackingTransparency.framework in Frameworks */,
+				D998AFE32B454200007125E8 /* StoreKit.framework in Frameworks */,
+				D998AFE22B4541F9007125E8 /* AdServices.framework in Frameworks */,
+				D998AFD12B450742007125E8 /* Security.framework in Frameworks */,
+				D998AFD02B45073B007125E8 /* SystemConfiguration.framework in Frameworks */,
+				0C6E2DE448364EA896869ADF /* libc++.tbd in Frameworks */,
+				1E1EA81A2326CD5100E22452 /* libsqlite3.tbd in Frameworks */,
+				1E1EA8182326CD4B00E22452 /* libc.tbd in Frameworks */,
+				1E1EA8162326CD4500E22452 /* VideoToolbox.framework in Frameworks */,
+				1E1EA8142326CD3E00E22452 /* CoreVideo.framework in Frameworks */,
+				1E1EA8122326CD3900E22452 /* CoreAudio.framework in Frameworks */,
+				1E1EA8102326CD3300E22452 /* GLKit.framework in Frameworks */,
+				1E1EA80E2326CD2F00E22452 /* CoreGraphics.framework in Frameworks */,
+				1E1EA80C2326CD2800E22452 /* AudioToolbox.framework in Frameworks */,
+				1E1EA80A2326CD2200E22452 /* AVFoundation.framework in Frameworks */,
+				7ACD4897222860DE00442C55 /* JavaScriptCore.framework in Frameworks */,
+				24A2AEF2383D44B586D31C01 /* libz.tbd in Frameworks */,
+				DD2BA30A89E64F189C2C24AC /* libWatermelonDB.a in Frameworks */,
+				D998AFD82B45080B007125E8 /* libTalkingDataSDK.a in Frameworks */,
+				A18006F16B94399B5B6E6044 /* libPods-defaults-RocketChatRN.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6ACAD22CB9FC300A41C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E25743422CBA2CF005A877F /* JavaScriptCore.framework in Frameworks */,
+				E0DCA7D422A2A2B9BF997287 /* libPods-defaults-ShareRocketChatRN.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFEB5922493B6640072EDC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34163CAB487343ABBE0E3C31 /* libPods-defaults-NotificationService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAB3E32257E6A6E00707CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D944C2D92B47E9BC007F2FED /* libTalkingDataSDK.a in Frameworks */,
+				D998AFCF2B45072B007125E8 /* CoreTelephony.framework in Frameworks */,
+				D998AFE12B4541D0007125E8 /* AdSupport.framework in Frameworks */,
+				D998AFDF2B4541C6007125E8 /* AppTrackingTransparency.framework in Frameworks */,
+				D998AFDD2B4541BA007125E8 /* StoreKit.framework in Frameworks */,
+				D998AFDB2B4541AE007125E8 /* AdServices.framework in Frameworks */,
+				D998AFCD2B45071C007125E8 /* Security.framework in Frameworks */,
+				D998AFCB2B450711007125E8 /* SystemConfiguration.framework in Frameworks */,
+				7AAB3E33257E6A6E00707CF6 /* libc++.tbd in Frameworks */,
+				7AAB3E34257E6A6E00707CF6 /* libsqlite3.tbd in Frameworks */,
+				7AAB3E35257E6A6E00707CF6 /* libc.tbd in Frameworks */,
+				7AAB3E36257E6A6E00707CF6 /* VideoToolbox.framework in Frameworks */,
+				7AAB3E37257E6A6E00707CF6 /* CoreVideo.framework in Frameworks */,
+				7AAB3E38257E6A6E00707CF6 /* CoreAudio.framework in Frameworks */,
+				7AAB3E39257E6A6E00707CF6 /* GLKit.framework in Frameworks */,
+				7AAB3E3A257E6A6E00707CF6 /* CoreGraphics.framework in Frameworks */,
+				7AAB3E3B257E6A6E00707CF6 /* AudioToolbox.framework in Frameworks */,
+				7AAB3E3C257E6A6E00707CF6 /* AVFoundation.framework in Frameworks */,
+				7AAB3E3D257E6A6E00707CF6 /* JavaScriptCore.framework in Frameworks */,
+				7AAB3E3E257E6A6E00707CF6 /* libz.tbd in Frameworks */,
+				7AAB3E3F257E6A6E00707CF6 /* libWatermelonDB.a in Frameworks */,
+				A8B76A4EB0B28D544F093C8E /* BuildFile in Frameworks */,
+				69EDC9859F714B08A3ED2F1D /* libPods-defaults-Rocket.Chat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* RocketChatRN */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09D42A2F280700072FBB /* YBImageBrowser */,
+				D9FC09CB2A2F225F00072FBB /* RunInBackground.mp3 */,
+				33B38EA82BA67139000A05DA /* incallmanager_busytone.mp3 */,
+				33B38EA72BA67139000A05DA /* incallmanager_ringback.mp3 */,
+				33B38EA62BA67139000A05DA /* incallmanager_ringtone.mp3 */,
+				33DBC4452B15DA940047962F /* wx_calling.wav */,
+				D9FC09C32A2EC49D00072FBB /* GoogleService-Info.plist */,
+				60B2A6A31FC4588700BD58E5 /* RocketChatRN.entitlements */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				7A92554528777E0100EC3DA3 /* AppDelegate.mm */,
+				D9FC09D02A2F279400072FBB /* JSToNativeManager.h */,
+				D9FC09D12A2F279400072FBB /* JSToNativeManager.m */,
+				D90FC9862B8C982900455C39 /* NativeToJSManager.h */,
+				D90FC9872B8C982A00455C39 /* NativeToJSManager.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				7A14FCEC257FEB3A005BDCD4 /* Experimental.xcassets */,
+				7A14FCF3257FEB59005BDCD4 /* Official.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				7AAA749C23043B1D00F1ADE9 /* RocketChatRN-Bridging-Header.h */,
+				7A0D62D1242AB187006D5C06 /* LaunchScreen.storyboard */,
+				1ED00BB02513E04400A1331F /* ReplyNotification.swift */,
+			);
+			name = RocketChatRN;
+			sourceTree = "<group>";
+		};
+		1E068CFB24FD2DAF00A0FFC1 /* AppGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1E068CFD24FD2DC700A0FFC1 /* AppGroup.swift */,
+				1E068D0024FD2E0500A0FFC1 /* AppGroup.m */,
+			);
+			path = AppGroup;
+			sourceTree = "<group>";
+		};
+		1E17C1332512ADC500901CCD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F615A25128F9A00871711 /* API.swift */,
+				1E2F615C25128FA300871711 /* Response.swift */,
+				1E2F61632512955D00871711 /* HTTPMethod.swift */,
+				1E680ED82512990700C9257A /* Request.swift */,
+				1E2F61622512954500871711 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1E2F61622512954500871711 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F61652512958900871711 /* Push.swift */,
+				1E598AE825151A63002BDFBD /* SendMessage.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		1E76CBC425152A7F0067298C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1E76CBDB25152D440067298C /* Models */,
+				1E76CBC625152A9A0067298C /* Extensions */,
+				1E76CBC525152A890067298C /* RocketChat */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1E76CBC525152A890067298C /* RocketChat */ = {
+			isa = PBXGroup;
+			children = (
+				1E17C1332512ADC500901CCD /* API */,
+				1EF5FBD0250C109E00614FEA /* Encryption.swift */,
+				1E1C2F7F250FCB69005DCE7D /* Database.swift */,
+				1E470E822513A71E00E3DD1D /* RocketChat.swift */,
+				1EB8EF712510F1EE00F352B7 /* Storage.swift */,
+			);
+			path = RocketChat;
+			sourceTree = "<group>";
+		};
+		1E76CBC625152A9A0067298C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E01C81B2511208400FEF824 /* URL+Extensions.swift */,
+				1E598AE32515057D002BDFBD /* Date+Extensions.swift */,
+				1E598AE625150660002BDFBD /* Data+Extensions.swift */,
+				1E67380324DC529B0009E081 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E76CBDB25152D440067298C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E01C8202511301400FEF824 /* PushResponse.swift */,
+				1E01C8242511303100FEF824 /* Notification.swift */,
+				1E01C8262511303900FEF824 /* Payload.swift */,
+				1E01C8282511304100FEF824 /* Sender.swift */,
+				1E01C82A2511335A00FEF824 /* Message.swift */,
+				1E01C82C2511337700FEF824 /* RoomKey.swift */,
+				1E51D961251263CD00DC95DE /* MessageType.swift */,
+				1E51D964251263D600DC95DE /* NotificationType.swift */,
+				1E0426E5251A5467008F022C /* RoomType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1EC6ACB122CB9FC300A41C61 /* ShareRocketChatRN */ = {
+			isa = PBXGroup;
+			children = (
+				33D578EC2BEDBC6300F7B04B /* GoogleService-Info.plist */,
+				33814D132BDDF2C00074EBA4 /* PrivacyInfo.xcprivacy */,
+				1EC6AD6022CBA20C00A41C61 /* ShareRocketChatRN.entitlements */,
+				1EC6ACB522CB9FC300A41C61 /* MainInterface.storyboard */,
+				1EC6ACB822CB9FC300A41C61 /* Info.plist */,
+				1EC6ACF522CBA01500A41C61 /* ShareRocketChatRN.m */,
+			);
+			path = ShareRocketChatRN;
+			sourceTree = "<group>";
+		};
+		1EFEB5962493B6640072EDC0 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				33814D112BDDF2B20074EBA4 /* PrivacyInfo.xcprivacy */,
+				D944C91C2B071B0900B437EA /* NotificationService-Bridging-Header.h */,
+				D944C91D2B071B0900B437EA /* NotificationService.swift */,
+				1EFEB5A12493B67D0072EDC0 /* NotificationService.entitlements */,
+				33DBC4402B1499940047962F /* ServiceExtension.h */,
+				33DBC4412B1499940047962F /* ServiceExtension.m */,
+				1EFEB5992493B6640072EDC0 /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		4F2FEDCF834DA36ADB5696EB /* ShareRocketChatRN */ = {
+			isa = PBXGroup;
+			children = (
+				016747EF3B9FED8DE2C9DA14 /* ExpoModulesProvider.swift */,
+			);
+			name = ShareRocketChatRN;
+			sourceTree = "<group>";
+		};
+		7890E71355E6C0A3288089E7 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				A19B6D9832C0496282053365 /* NotificationService */,
+				989BF9C58F3C91FDAA6C0452 /* Rocket.Chat */,
+				CADEA0916086EF72D141FF5A /* RocketChatRN */,
+				4F2FEDCF834DA36ADB5696EB /* ShareRocketChatRN */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		7AC2B09613AA7C3FEBAC9F57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65BE95C338CBD0F2ED8A8057 /* Pods-defaults-NotificationService.debug.xcconfig */,
+				A869A59810A3929091F67649 /* Pods-defaults-NotificationService.release.xcconfig */,
+				AA1D5014ABFC384B8CAFEBA0 /* Pods-defaults-Rocket.Chat.debug.xcconfig */,
+				D7A3AF756639066F66137F91 /* Pods-defaults-Rocket.Chat.release.xcconfig */,
+				BE1E95534E2C71BCEB81ABDB /* Pods-defaults-RocketChatRN.debug.xcconfig */,
+				9E11B71CA7EFE12116E92150 /* Pods-defaults-RocketChatRN.release.xcconfig */,
+				330F4C7CB38DCAFFB5D2F4D2 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */,
+				716932D06209A9C4288CEB96 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				D998AFD32B45080B007125E8 /* TalkingData */,
+				1E76CBC425152A7F0067298C /* Shared */,
+				1E068CFB24FD2DAF00A0FFC1 /* AppGroup */,
+				13B07FAE1A68108700A75B9A /* RocketChatRN */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				1EC6ACB122CB9FC300A41C61 /* ShareRocketChatRN */,
+				1EFEB5962493B6640072EDC0 /* NotificationService */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				BB4B591B5FC44CD9986DB2A6 /* Frameworks */,
+				AF5E16F0398347E6A80C8CBE /* Resources */,
+				B8E79A681F3CCC69005B464F /* Recovered References */,
+				7AC2B09613AA7C3FEBAC9F57 /* Pods */,
+				7890E71355E6C0A3288089E7 /* ExpoModulesProviders */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Rocket.Chat Experimental.app */,
+				1EC6ACB022CB9FC300A41C61 /* ShareRocketChatRN.appex */,
+				1EFEB5952493B6640072EDC0 /* NotificationService.appex */,
+				7AAB3E52257E6A6E00707CF6 /* Rocket.Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989BF9C58F3C91FDAA6C0452 /* Rocket.Chat */ = {
+			isa = PBXGroup;
+			children = (
+				391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */,
+			);
+			name = Rocket.Chat;
+			sourceTree = "<group>";
+		};
+		A19B6D9832C0496282053365 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */,
+			);
+			name = NotificationService;
+			sourceTree = "<group>";
+		};
+		AF5E16F0398347E6A80C8CBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33814D0C2BDA48C00074EBA4 /* PrivacyInfo.xcprivacy */,
+				7AE10C0528A59530003593CB /* Inter.ttf */,
+				7A610CD127ECE38100B8ABDD /* custom.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B8E79A681F3CCC69005B464F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BA7E862283664608B3894E34 /* libWatermelonDB.a */,
+				7A006F13229C83B600803143 /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		BB4B591B5FC44CD9986DB2A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D998AFE02B4541D0007125E8 /* AdSupport.framework */,
+				D998AFDE2B4541C6007125E8 /* AppTrackingTransparency.framework */,
+				D998AFDC2B4541BA007125E8 /* StoreKit.framework */,
+				D998AFDA2B4541AE007125E8 /* AdServices.framework */,
+				D998AFCE2B45072B007125E8 /* CoreTelephony.framework */,
+				D998AFCC2B45071B007125E8 /* Security.framework */,
+				D998AFCA2B450711007125E8 /* SystemConfiguration.framework */,
+				1E1EA8192326CD5100E22452 /* libsqlite3.tbd */,
+				1E1EA8172326CD4B00E22452 /* libc.tbd */,
+				1E1EA8152326CD4500E22452 /* VideoToolbox.framework */,
+				1E1EA8132326CD3E00E22452 /* CoreVideo.framework */,
+				1E1EA8112326CD3900E22452 /* CoreAudio.framework */,
+				1E1EA80F2326CD3300E22452 /* GLKit.framework */,
+				1E1EA80D2326CD2F00E22452 /* CoreGraphics.framework */,
+				1E1EA80B2326CD2800E22452 /* AudioToolbox.framework */,
+				1E1EA8092326CD2200E22452 /* AVFoundation.framework */,
+				7ACD4853222860DE00442C55 /* JavaScriptCore.framework */,
+				B37C79D9BD0742CE936B6982 /* libc++.tbd */,
+				06BB44DD4855498082A744AD /* libz.tbd */,
+				41E371D4CB3AD4F71CB94DDD /* libPods-defaults-NotificationService.a */,
+				21765FC7E55F90E9A66DD411 /* libPods-defaults-Rocket.Chat.a */,
+				DA6B186010ABFF3B4DE0D530 /* libPods-defaults-RocketChatRN.a */,
+				A663AD48B38352AB11A7BEDA /* libPods-defaults-ShareRocketChatRN.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CADEA0916086EF72D141FF5A /* RocketChatRN */ = {
+			isa = PBXGroup;
+			children = (
+				45D5C142B655F8EFD006792C /* ExpoModulesProvider.swift */,
+			);
+			name = RocketChatRN;
+			sourceTree = "<group>";
+		};
+		D998AFD32B45080B007125E8 /* TalkingData */ = {
+			isa = PBXGroup;
+			children = (
+				D998AFD42B45080B007125E8 /* TalkingDataSDK.h */,
+				D998AFD52B45080B007125E8 /* RCTTalkingDataSDK.h */,
+				D998AFD62B45080B007125E8 /* libTalkingDataSDK.a */,
+				D998AFD72B45080B007125E8 /* RCTTalkingDataSDK.m */,
+			);
+			path = TalkingData;
+			sourceTree = "<group>";
+		};
+		D9FC09D42A2F280700072FBB /* YBImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09D52A2F280700072FBB /* Video */,
+				D9FC09E62A2F280700072FBB /* YYImage */,
+				D9FC09F12A2F280700072FBB /* WebImageMediator */,
+				D9FC09F52A2F280700072FBB /* YBImageBrowser.m */,
+				D9FC09F62A2F280700072FBB /* Protocol */,
+				D9FC09FE2A2F280700072FBB /* Image */,
+				D9FC0A102A2F280700072FBB /* AuxiliaryView */,
+				D9FC0A172A2F280700072FBB /* Helper */,
+				D9FC0A222A2F280700072FBB /* ToolView */,
+				D9FC0A292A2F280700072FBB /* Base */,
+				D9FC0A392A2F280700072FBB /* YBImageBrowser.h */,
+				D9FC0A3A2A2F280700072FBB /* YBImageBrowser.bundle */,
+			);
+			path = YBImageBrowser;
+			sourceTree = "<group>";
+		};
+		D9FC09D52A2F280700072FBB /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09D62A2F280700072FBB /* YBIBVideoCell.m */,
+				D9FC09D72A2F280700072FBB /* YBIBVideoData.m */,
+				D9FC09D82A2F280700072FBB /* YBIBVideoTopBar.m */,
+				D9FC09D92A2F280700072FBB /* YBIBVideoActionBar.h */,
+				D9FC09DA2A2F280700072FBB /* YBIBVideoView.m */,
+				D9FC09DB2A2F280700072FBB /* SharkfoodMuteSwitchDetector.h */,
+				D9FC09DC2A2F280700072FBB /* YBIBVideoData+Internal.h */,
+				D9FC09DD2A2F280700072FBB /* YBIBVideoCell+Internal.h */,
+				D9FC09DE2A2F280700072FBB /* YBIBVideoData.h */,
+				D9FC09DF2A2F280700072FBB /* YBIBVideoCell.h */,
+				D9FC09E02A2F280700072FBB /* YBIBVideoView.h */,
+				D9FC09E12A2F280700072FBB /* YBIBVideoActionBar.m */,
+				D9FC09E22A2F280700072FBB /* mute.caf */,
+				D9FC09E32A2F280700072FBB /* YBIBVideoTopBar.h */,
+				D9FC09E42A2F280700072FBB /* YBImageBrowserVideo.bundle */,
+				D9FC09E52A2F280700072FBB /* SharkfoodMuteSwitchDetector.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D9FC09E62A2F280700072FBB /* YYImage */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09E72A2F280700072FBB /* YYImage.h */,
+				D9FC09E82A2F280700072FBB /* YYImageCoder.h */,
+				D9FC09E92A2F280700072FBB /* YYFrameImage.h */,
+				D9FC09EA2A2F280700072FBB /* YYSpriteSheetImage.m */,
+				D9FC09EB2A2F280700072FBB /* YYAnimatedImageView.h */,
+				D9FC09EC2A2F280700072FBB /* YYImage.m */,
+				D9FC09ED2A2F280700072FBB /* YYImageCoder.m */,
+				D9FC09EE2A2F280700072FBB /* YYFrameImage.m */,
+				D9FC09EF2A2F280700072FBB /* YYAnimatedImageView.m */,
+				D9FC09F02A2F280700072FBB /* YYSpriteSheetImage.h */,
+			);
+			path = YYImage;
+			sourceTree = "<group>";
+		};
+		D9FC09F12A2F280700072FBB /* WebImageMediator */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09F22A2F280700072FBB /* YBIBDefaultWebImageMediator.h */,
+				D9FC09F32A2F280700072FBB /* YBIBDefaultWebImageMediator.m */,
+				D9FC09F42A2F280700072FBB /* YBIBWebImageMediator.h */,
+			);
+			path = WebImageMediator;
+			sourceTree = "<group>";
+		};
+		D9FC09F62A2F280700072FBB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09F72A2F280700072FBB /* YBIBOrientationReceiveProtocol.h */,
+				D9FC09F82A2F280700072FBB /* YBImageBrowserDataSource.h */,
+				D9FC09F92A2F280700072FBB /* YBIBOperateBrowserProtocol.h */,
+				D9FC09FA2A2F280700072FBB /* YBIBCellProtocol.h */,
+				D9FC09FB2A2F280700072FBB /* YBImageBrowserDelegate.h */,
+				D9FC09FC2A2F280700072FBB /* YBIBDataProtocol.h */,
+				D9FC09FD2A2F280700072FBB /* YBIBGetBaseInfoProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D9FC09FE2A2F280700072FBB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC09FF2A2F280700072FBB /* YBIBImageCache.h */,
+				D9FC0A002A2F280700072FBB /* YBIBImageLayout.m */,
+				D9FC0A012A2F280700072FBB /* YBIBImageData.h */,
+				D9FC0A022A2F280700072FBB /* YBImage.m */,
+				D9FC0A032A2F280700072FBB /* YBIBImageCell.h */,
+				D9FC0A042A2F280700072FBB /* YBIBInteractionProfile.m */,
+				D9FC0A052A2F280700072FBB /* YBIBImageScrollView.m */,
+				D9FC0A062A2F280700072FBB /* YBIBImageLayout.h */,
+				D9FC0A072A2F280700072FBB /* YBIBImageCache.m */,
+				D9FC0A082A2F280700072FBB /* YBIBImageCell.m */,
+				D9FC0A092A2F280700072FBB /* YBImage.h */,
+				D9FC0A0A2A2F280700072FBB /* YBIBImageData.m */,
+				D9FC0A0B2A2F280700072FBB /* YBIBInteractionProfile.h */,
+				D9FC0A0C2A2F280700072FBB /* YBIBImageCell+Internal.h */,
+				D9FC0A0D2A2F280700072FBB /* YBIBImageData+Internal.h */,
+				D9FC0A0E2A2F280700072FBB /* YBIBImageScrollView.h */,
+				D9FC0A0F2A2F280700072FBB /* YBIBImageCache+Internal.h */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D9FC0A102A2F280700072FBB /* AuxiliaryView */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC0A112A2F280700072FBB /* YBIBToastView.m */,
+				D9FC0A122A2F280700072FBB /* YBIBLoadingView.m */,
+				D9FC0A132A2F280700072FBB /* YBIBAuxiliaryViewHandler.m */,
+				D9FC0A142A2F280700072FBB /* YBIBToastView.h */,
+				D9FC0A152A2F280700072FBB /* YBIBLoadingView.h */,
+				D9FC0A162A2F280700072FBB /* YBIBAuxiliaryViewHandler.h */,
+			);
+			path = AuxiliaryView;
+			sourceTree = "<group>";
+		};
+		D9FC0A172A2F280700072FBB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC0A182A2F280700072FBB /* YBIBSentinel.h */,
+				D9FC0A192A2F280700072FBB /* YBIBCopywriter.h */,
+				D9FC0A1A2A2F280700072FBB /* YBIBUtilities.h */,
+				D9FC0A1B2A2F280700072FBB /* YBIBPhotoAlbumManager.h */,
+				D9FC0A1C2A2F280700072FBB /* YBIBIconManager.m */,
+				D9FC0A1D2A2F280700072FBB /* YBIBSentinel.m */,
+				D9FC0A1E2A2F280700072FBB /* YBIBCopywriter.m */,
+				D9FC0A1F2A2F280700072FBB /* YBIBUtilities.m */,
+				D9FC0A202A2F280700072FBB /* YBIBPhotoAlbumManager.m */,
+				D9FC0A212A2F280700072FBB /* YBIBIconManager.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D9FC0A222A2F280700072FBB /* ToolView */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC0A232A2F280700072FBB /* YBIBTopView.h */,
+				D9FC0A242A2F280700072FBB /* YBIBToolViewHandler.h */,
+				D9FC0A252A2F280700072FBB /* YBIBSheetView.h */,
+				D9FC0A262A2F280700072FBB /* YBIBTopView.m */,
+				D9FC0A272A2F280700072FBB /* YBIBToolViewHandler.m */,
+				D9FC0A282A2F280700072FBB /* YBIBSheetView.m */,
+			);
+			path = ToolView;
+			sourceTree = "<group>";
+		};
+		D9FC0A292A2F280700072FBB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D9FC0A2A2A2F280700072FBB /* YBIBScreenRotationHandler.m */,
+				D9FC0A2B2A2F280700072FBB /* YBIBContainerView.m */,
+				D9FC0A2C2A2F280700072FBB /* NSObject+YBImageBrowser.h */,
+				D9FC0A2D2A2F280700072FBB /* YBIBDataMediator.m */,
+				D9FC0A2E2A2F280700072FBB /* YBIBCollectionView.m */,
+				D9FC0A2F2A2F280700072FBB /* YBIBCollectionViewLayout.m */,
+				D9FC0A302A2F280700072FBB /* YBImageBrowser+Internal.h */,
+				D9FC0A312A2F280700072FBB /* YBIBAnimatedTransition.m */,
+				D9FC0A322A2F280700072FBB /* YBIBContainerView.h */,
+				D9FC0A332A2F280700072FBB /* YBIBScreenRotationHandler.h */,
+				D9FC0A342A2F280700072FBB /* YBIBDataMediator.h */,
+				D9FC0A352A2F280700072FBB /* NSObject+YBImageBrowser.m */,
+				D9FC0A362A2F280700072FBB /* YBIBCollectionViewLayout.h */,
+				D9FC0A372A2F280700072FBB /* YBIBCollectionView.h */,
+				D9FC0A382A2F280700072FBB /* YBIBAnimatedTransition.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* RocketChatRN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RocketChatRN" */;
+			buildPhases = (
+				AD3465146A7EE76A9E33E243 /* [CP] Check Pods Manifest.lock */,
+				7AA5C63E23E30D110005C4A7 /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				1EC6ACF422CB9FC300A41C61 /* Embed App Extensions */,
+				1E1EA8082326CCE300E22452 /* ShellScript */,
+				3255CFE7378AE403F75ED163 /* [CP] Embed Pods Frameworks */,
+				0DC8BB780857D96CE63A9F1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC6ACBA22CB9FC300A41C61 /* PBXTargetDependency */,
+				1EFEB59B2493B6640072EDC0 /* PBXTargetDependency */,
+			);
+			name = RocketChatRN;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* Rocket.Chat Experimental.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EC6ACAF22CB9FC300A41C61 /* ShareRocketChatRN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC6ACF322CB9FC300A41C61 /* Build configuration list for PBXNativeTarget "ShareRocketChatRN" */;
+			buildPhases = (
+				6E7D33AB75A0A3D3DC9FC9A4 /* [CP] Check Pods Manifest.lock */,
+				1EC6ACAC22CB9FC300A41C61 /* Sources */,
+				1EC6ACAD22CB9FC300A41C61 /* Frameworks */,
+				1EC6ACAE22CB9FC300A41C61 /* Resources */,
+				1EFE4DC322CBF36300B766B7 /* ShellScript */,
+				CC0B3571C9DBC810AA24A8AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareRocketChatRN;
+			productName = ShareRocketChatRN;
+			productReference = 1EC6ACB022CB9FC300A41C61 /* ShareRocketChatRN.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1EFEB5942493B6640072EDC0 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFEB5A02493B6640072EDC0 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				FA6D2DC39AE18C4D847A838B /* [CP] Check Pods Manifest.lock */,
+				1EFEB5912493B6640072EDC0 /* Sources */,
+				1EFEB5922493B6640072EDC0 /* Frameworks */,
+				1EFEB5932493B6640072EDC0 /* Resources */,
+				2DD37E8C578DF2FBF3F64C59 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 1EFEB5952493B6640072EDC0 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7AAB3E0D257E6A6E00707CF6 /* Rocket.Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AAB3E4F257E6A6E00707CF6 /* Build configuration list for PBXNativeTarget "Rocket.Chat" */;
+			buildPhases = (
+				FD14B4B937F5D3068264A728 /* [CP] Check Pods Manifest.lock */,
+				7AAB3E13257E6A6E00707CF6 /* Start Packager */,
+				7AAB3E14257E6A6E00707CF6 /* Sources */,
+				7AAB3E32257E6A6E00707CF6 /* Frameworks */,
+				7AAB3E41257E6A6E00707CF6 /* Resources */,
+				7AAB3E46257E6A6E00707CF6 /* Bundle React Native code and images */,
+				7AAB3E48257E6A6E00707CF6 /* Embed App Extensions */,
+				7AAB3E4B257E6A6E00707CF6 /* ShellScript */,
+				815DE735850B9FCA8B520C26 /* [CP] Embed Pods Frameworks */,
+				F1639F2674F326B674109B19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AAB3E0E257E6A6E00707CF6 /* PBXTargetDependency */,
+				7AAB3E10257E6A6E00707CF6 /* PBXTargetDependency */,
+			);
+			name = Rocket.Chat;
+			productName = "Hello World";
+			productReference = 7AAB3E52257E6A6E00707CF6 /* Rocket.Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 76D572M8T4;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					1EC6ACAF22CB9FC300A41C61 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = 76D572M8T4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1EFEB5942493B6640072EDC0 = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = 76D572M8T4;
+						ProvisioningStyle = Automatic;
+					};
+					7AAB3E0D257E6A6E00707CF6 = {
+						DevelopmentTeam = 76D572M8T4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RocketChatRN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* RocketChatRN */,
+				1EC6ACAF22CB9FC300A41C61 /* ShareRocketChatRN */,
+				1EFEB5942493B6640072EDC0 /* NotificationService */,
+				7AAB3E0D257E6A6E00707CF6 /* Rocket.Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FC0A8B2A2F280800072FBB /* YBImageBrowser.bundle in Resources */,
+				D9FC0A452A2F280800072FBB /* mute.caf in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7A610CD227ECE38100B8ABDD /* custom.ttf in Resources */,
+				7A14FCED257FEB3A005BDCD4 /* Experimental.xcassets in Resources */,
+				33B38EA92BA67139000A05DA /* incallmanager_ringtone.mp3 in Resources */,
+				33B38EAD2BA67139000A05DA /* incallmanager_busytone.mp3 in Resources */,
+				33B38EAB2BA67139000A05DA /* incallmanager_ringback.mp3 in Resources */,
+				7AE10C0628A59530003593CB /* Inter.ttf in Resources */,
+				33DBC4462B15DA940047962F /* wx_calling.wav in Resources */,
+				D9FC0A472A2F280800072FBB /* YBImageBrowserVideo.bundle in Resources */,
+				7A006F14229C83B600803143 /* GoogleService-Info.plist in Resources */,
+				D9FC09CE2A2F225F00072FBB /* RunInBackground.mp3 in Resources */,
+				7A0D62D2242AB187006D5C06 /* LaunchScreen.storyboard in Resources */,
+				D9FC09C42A2EC49D00072FBB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6ACAE22CB9FC300A41C61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A610CD327ECE38100B8ABDD /* custom.ttf in Resources */,
+				1EC6ACB722CB9FC300A41C61 /* MainInterface.storyboard in Resources */,
+				33D578ED2BEDBC6300F7B04B /* GoogleService-Info.plist in Resources */,
+				33814D142BDDF2C00074EBA4 /* PrivacyInfo.xcprivacy in Resources */,
+				7AE10C0728A59530003593CB /* Inter.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFEB5932493B6640072EDC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33814D122BDDF2B20074EBA4 /* PrivacyInfo.xcprivacy in Resources */,
+				7A610CD427ECE38100B8ABDD /* custom.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAB3E41257E6A6E00707CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FC0A8C2A2F280800072FBB /* YBImageBrowser.bundle in Resources */,
+				D9FC0A462A2F280800072FBB /* mute.caf in Resources */,
+				7A14FCF4257FEB59005BDCD4 /* Official.xcassets in Resources */,
+				7A610CD527ECE38100B8ABDD /* custom.ttf in Resources */,
+				7AAB3E42257E6A6E00707CF6 /* Images.xcassets in Resources */,
+				33B38EAA2BA67139000A05DA /* incallmanager_ringtone.mp3 in Resources */,
+				33814D0E2BDB41440074EBA4 /* PrivacyInfo.xcprivacy in Resources */,
+				33B38EAE2BA67139000A05DA /* incallmanager_busytone.mp3 in Resources */,
+				33B38EAC2BA67139000A05DA /* incallmanager_ringback.mp3 in Resources */,
+				7AE10C0828A59530003593CB /* Inter.ttf in Resources */,
+				33DBC4472B15DA940047962F /* wx_calling.wav in Resources */,
+				D9FC0A482A2F280800072FBB /* YBImageBrowserVideo.bundle in Resources */,
+				7AAB3E44257E6A6E00707CF6 /* GoogleService-Info.plist in Resources */,
+				D9FC09CF2A2F225F00072FBB /* RunInBackground.mp3 in Resources */,
+				7AAB3E45257E6A6E00707CF6 /* LaunchScreen.storyboard in Resources */,
+				D9FC09C52A2EC49D00072FBB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		0DC8BB780857D96CE63A9F1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-image-crop-picker/ios/QBImagePicker/QBImagePicker/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E1EA8082326CCE300E22452 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Target architectures: $ARCHS\"\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\n# remove simulator's archs if location is not simulator's directory\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\necho \"No need to remove archs\"\n;;\n*)\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"i386 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"x86_64 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\n;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $\n\ndone\n";
+		};
+		1EFE4DC322CBF36300B766B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		2DD37E8C578DF2FBF3F64C59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-image-crop-picker/ios/QBImagePicker/QBImagePicker/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3255CFE7378AE403F75ED163 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraIrisRTC_iOS/AgoraRtcWrapper.framework/AgoraRtcWrapper",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAEC/AgoraAiEchoCancellationExtension.framework/AgoraAiEchoCancellationExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINS/AgoraAiNoiseSuppressionExtension.framework/AgoraAiNoiseSuppressionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AudioBeauty/AgoraAudioBeautyExtension.framework/AgoraAudioBeautyExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ClearVision/AgoraClearVisionExtension.framework/AgoraClearVisionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ContentInspect/AgoraContentInspectExtension.framework/AgoraContentInspectExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/DRM/AgoraDrmLoaderExtension.framework/AgoraDrmLoaderExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ReplayKit/AgoraReplayKitExtension.framework/AgoraReplayKitExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraDav1d.framework/AgoraDav1d",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraRtcKit.framework/AgoraRtcKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraSoundTouch.framework/AgoraSoundTouch",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agorafdkaac.framework/Agorafdkaac",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agoraffmpeg.framework/Agoraffmpeg",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SpatialAudio/AgoraSpatialAudioExtension.framework/AgoraSpatialAudioExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SuperResolution/AgoraSuperResolutionExtension.framework/AgoraSuperResolutionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VQA/AgoraVideoQualityAnalyzerExtension.framework/AgoraVideoQualityAnalyzerExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VirtualBackground/AgoraVideoSegmentationExtension.framework/AgoraVideoSegmentationExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiEchoCancellationExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiNoiseSuppressionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAudioBeautyExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraClearVisionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraContentInspectExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDrmLoaderExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraReplayKitExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDav1d.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSoundTouch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agorafdkaac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agoraffmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSpatialAudioExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSuperResolutionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoQualityAnalyzerExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoSegmentationExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7D33AB75A0A3D3DC9FC9A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-ShareRocketChatRN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA5C63E23E30D110005C4A7 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+		};
+		7AAB3E13257E6A6E00707CF6 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+		};
+		7AAB3E46257E6A6E00707CF6 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		7AAB3E4B257E6A6E00707CF6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Target architectures: $ARCHS\"\n\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\necho $(lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\")\n\nFRAMEWORK_TMP_PATH=\"$FRAMEWORK_EXECUTABLE_PATH-tmp\"\n\n# remove simulator's archs if location is not simulator's directory\ncase \"${TARGET_BUILD_DIR}\" in\n*\"iphonesimulator\")\necho \"No need to remove archs\"\n;;\n*)\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"i386\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"i386\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"i386 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\nif $(lipo \"$FRAMEWORK_EXECUTABLE_PATH\" -verify_arch \"x86_64\") ; then\nlipo -output \"$FRAMEWORK_TMP_PATH\" -remove \"x86_64\" \"$FRAMEWORK_EXECUTABLE_PATH\"\necho \"x86_64 architecture removed\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_TMP_PATH\" \"$FRAMEWORK_EXECUTABLE_PATH\"\nfi\n;;\nesac\n\necho \"Completed for executable $FRAMEWORK_EXECUTABLE_PATH\"\necho $\n\ndone\n";
+		};
+		815DE735850B9FCA8B520C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraIrisRTC_iOS/AgoraRtcWrapper.framework/AgoraRtcWrapper",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AIAEC/AgoraAiEchoCancellationExtension.framework/AgoraAiEchoCancellationExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINS/AgoraAiNoiseSuppressionExtension.framework/AgoraAiNoiseSuppressionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AudioBeauty/AgoraAudioBeautyExtension.framework/AgoraAudioBeautyExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ClearVision/AgoraClearVisionExtension.framework/AgoraClearVisionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ContentInspect/AgoraContentInspectExtension.framework/AgoraContentInspectExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/DRM/AgoraDrmLoaderExtension.framework/AgoraDrmLoaderExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ReplayKit/AgoraReplayKitExtension.framework/AgoraReplayKitExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraDav1d.framework/AgoraDav1d",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraRtcKit.framework/AgoraRtcKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraSoundTouch.framework/AgoraSoundTouch",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agorafdkaac.framework/Agorafdkaac",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agoraffmpeg.framework/Agoraffmpeg",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SpatialAudio/AgoraSpatialAudioExtension.framework/AgoraSpatialAudioExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SuperResolution/AgoraSuperResolutionExtension.framework/AgoraSuperResolutionExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VQA/AgoraVideoQualityAnalyzerExtension.framework/AgoraVideoQualityAnalyzerExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VirtualBackground/AgoraVideoSegmentationExtension.framework/AgoraVideoSegmentationExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiEchoCancellationExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiNoiseSuppressionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAudioBeautyExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraClearVisionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraContentInspectExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDrmLoaderExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraReplayKitExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDav1d.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSoundTouch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agorafdkaac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agoraffmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSpatialAudioExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSuperResolutionExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoQualityAnalyzerExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoSegmentationExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3465146A7EE76A9E33E243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-RocketChatRN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC0B3571C9DBC810AA24A8AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-image-crop-picker/ios/QBImagePicker/QBImagePicker/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1639F2674F326B674109B19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-image-crop-picker/ios/QBImagePicker/QBImagePicker/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6D2DC39AE18C4D847A838B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-NotificationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD14B4B937F5D3068264A728 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-Rocket.Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E76CBCB25152C250067298C /* Sender.swift in Sources */,
+				D9FC0A512A2F280800072FBB /* YYFrameImage.m in Sources */,
+				D9FC0A812A2F280800072FBB /* YBIBDataMediator.m in Sources */,
+				D9FC0A3F2A2F280800072FBB /* YBIBVideoTopBar.m in Sources */,
+				D9FC0A5F2A2F280800072FBB /* YBIBImageScrollView.m in Sources */,
+				D9FC0A3D2A2F280800072FBB /* YBIBVideoData.m in Sources */,
+				D9FC0A5D2A2F280800072FBB /* YBIBInteractionProfile.m in Sources */,
+				1E76CBD825152C870067298C /* Request.swift in Sources */,
+				1ED00BB12513E04400A1331F /* ReplyNotification.swift in Sources */,
+				1E76CBC2251529560067298C /* Storage.swift in Sources */,
+				D9FC0A6F2A2F280800072FBB /* YBIBSentinel.m in Sources */,
+				D9FC0A672A2F280800072FBB /* YBIBToastView.m in Sources */,
+				D9FC0A7B2A2F280800072FBB /* YBIBSheetView.m in Sources */,
+				D9FC09D22A2F279400072FBB /* JSToNativeManager.m in Sources */,
+				1E76CBD925152C8C0067298C /* Push.swift in Sources */,
+				1E0426E6251A5467008F022C /* RoomType.swift in Sources */,
+				D90FC9882B8C982A00455C39 /* NativeToJSManager.m in Sources */,
+				D9FC0A772A2F280800072FBB /* YBIBTopView.m in Sources */,
+				1E76CBCD25152C2C0067298C /* MessageType.swift in Sources */,
+				1E76CBC925152C1F0067298C /* PushResponse.swift in Sources */,
+				D9FC0A7D2A2F280800072FBB /* YBIBScreenRotationHandler.m in Sources */,
+				7A92554628777E0100EC3DA3 /* AppDelegate.mm in Sources */,
+				1E76CBD325152C770067298C /* Encryption.swift in Sources */,
+				D9FC0A5B2A2F280800072FBB /* YBImage.m in Sources */,
+				1E76CBC825152C070067298C /* RocketChat.swift in Sources */,
+				D9FC0A412A2F280800072FBB /* YBIBVideoView.m in Sources */,
+				D9FC0A4D2A2F280800072FBB /* YYImage.m in Sources */,
+				1E76CBD725152C840067298C /* HTTPMethod.swift in Sources */,
+				1E76CBC725152BFF0067298C /* Payload.swift in Sources */,
+				D9FC0A4F2A2F280800072FBB /* YYImageCoder.m in Sources */,
+				D9FC0A712A2F280800072FBB /* YBIBCopywriter.m in Sources */,
+				1E76CBD225152C730067298C /* Data+Extensions.swift in Sources */,
+				D9FC0A612A2F280800072FBB /* YBIBImageCache.m in Sources */,
+				D9FC0A7F2A2F280800072FBB /* YBIBContainerView.m in Sources */,
+				1E76CBD125152C710067298C /* Date+Extensions.swift in Sources */,
+				D9FC0A572A2F280800072FBB /* YBImageBrowser.m in Sources */,
+				1E76CBD425152C790067298C /* Database.swift in Sources */,
+				D9FC0A6B2A2F280800072FBB /* YBIBAuxiliaryViewHandler.m in Sources */,
+				1E76CBC325152A460067298C /* String+Extensions.swift in Sources */,
+				1E76CBCA25152C220067298C /* Notification.swift in Sources */,
+				D9FC0A752A2F280800072FBB /* YBIBPhotoAlbumManager.m in Sources */,
+				D9FC0A692A2F280800072FBB /* YBIBLoadingView.m in Sources */,
+				1E76CBD525152C7F0067298C /* API.swift in Sources */,
+				D9FC0A732A2F280800072FBB /* YBIBUtilities.m in Sources */,
+				D9FC0A872A2F280800072FBB /* YBIBAnimatedTransition.m in Sources */,
+				D9FC0A3B2A2F280800072FBB /* YBIBVideoCell.m in Sources */,
+				D9FC0A852A2F280800072FBB /* YBIBCollectionViewLayout.m in Sources */,
+				1E76CBD625152C820067298C /* Response.swift in Sources */,
+				1E068D0124FD2E0500A0FFC1 /* AppGroup.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D9FC0A892A2F280800072FBB /* NSObject+YBImageBrowser.m in Sources */,
+				1E76CBD025152C6E0067298C /* URL+Extensions.swift in Sources */,
+				D9FC0A492A2F280800072FBB /* SharkfoodMuteSwitchDetector.m in Sources */,
+				1E068CFE24FD2DC700A0FFC1 /* AppGroup.swift in Sources */,
+				D9FC0A532A2F280800072FBB /* YYAnimatedImageView.m in Sources */,
+				D9FC0A632A2F280800072FBB /* YBIBImageCell.m in Sources */,
+				1E76CBCE25152C2F0067298C /* RoomKey.swift in Sources */,
+				D9FC0A792A2F280800072FBB /* YBIBToolViewHandler.m in Sources */,
+				D998AFD92B45080C007125E8 /* RCTTalkingDataSDK.m in Sources */,
+				1E76CBCC25152C290067298C /* Message.swift in Sources */,
+				D9FC0A432A2F280800072FBB /* YBIBVideoActionBar.m in Sources */,
+				D9FC0A4B2A2F280800072FBB /* YYSpriteSheetImage.m in Sources */,
+				1E76CBCF25152C310067298C /* NotificationType.swift in Sources */,
+				1E76CBDA25152C8E0067298C /* SendMessage.swift in Sources */,
+				4C4C8603EF082F0A33A95522 /* ExpoModulesProvider.swift in Sources */,
+				D9FC0A6D2A2F280800072FBB /* YBIBIconManager.m in Sources */,
+				D9FC0A552A2F280800072FBB /* YBIBDefaultWebImageMediator.m in Sources */,
+				D9FC0A832A2F280800072FBB /* YBIBCollectionView.m in Sources */,
+				D9FC0A592A2F280800072FBB /* YBIBImageLayout.m in Sources */,
+				D9FC0A652A2F280800072FBB /* YBIBImageData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC6ACAC22CB9FC300A41C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC6ACF622CBA01500A41C61 /* ShareRocketChatRN.m in Sources */,
+				1E068CFF24FD2DC700A0FFC1 /* AppGroup.swift in Sources */,
+				1E068D0224FD2E0500A0FFC1 /* AppGroup.m in Sources */,
+				D94D81FB9E10756FAA03F203 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFEB5912493B6640072EDC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E51D965251263D600DC95DE /* NotificationType.swift in Sources */,
+				33DBC4422B1499940047962F /* ServiceExtension.m in Sources */,
+				1EF5FBD1250C109E00614FEA /* Encryption.swift in Sources */,
+				D944C9202B071B0900B437EA /* NotificationService.swift in Sources */,
+				1E598AE42515057D002BDFBD /* Date+Extensions.swift in Sources */,
+				1E01C81C2511208400FEF824 /* URL+Extensions.swift in Sources */,
+				1E470E832513A71E00E3DD1D /* RocketChat.swift in Sources */,
+				1E2F615D25128FA300871711 /* Response.swift in Sources */,
+				1E01C82D2511337700FEF824 /* RoomKey.swift in Sources */,
+				1E01C8252511303100FEF824 /* Notification.swift in Sources */,
+				1E0426E7251A54B4008F022C /* RoomType.swift in Sources */,
+				1E1C2F80250FCB69005DCE7D /* Database.swift in Sources */,
+				1E67380424DC529B0009E081 /* String+Extensions.swift in Sources */,
+				1E01C8292511304100FEF824 /* Sender.swift in Sources */,
+				1E51D962251263CD00DC95DE /* MessageType.swift in Sources */,
+				1E01C82B2511335A00FEF824 /* Message.swift in Sources */,
+				1E01C8212511301400FEF824 /* PushResponse.swift in Sources */,
+				1E680ED92512990700C9257A /* Request.swift in Sources */,
+				1E2F61642512955D00871711 /* HTTPMethod.swift in Sources */,
+				1E598AE925151A63002BDFBD /* SendMessage.swift in Sources */,
+				1E2F61662512958900871711 /* Push.swift in Sources */,
+				1EB8EF722510F1EE00F352B7 /* Storage.swift in Sources */,
+				1E598AE725150660002BDFBD /* Data+Extensions.swift in Sources */,
+				1E2F615B25128F9A00871711 /* API.swift in Sources */,
+				1E01C8272511303900FEF824 /* Payload.swift in Sources */,
+				85160EB6C143E0493FE5F014 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AAB3E14257E6A6E00707CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D992F9EA2B49A7A800D0210F /* RCTTalkingDataSDK.m in Sources */,
+				7AAB3E15257E6A6E00707CF6 /* Sender.swift in Sources */,
+				D9FC0A522A2F280800072FBB /* YYFrameImage.m in Sources */,
+				D9FC0A822A2F280800072FBB /* YBIBDataMediator.m in Sources */,
+				D9FC0A402A2F280800072FBB /* YBIBVideoTopBar.m in Sources */,
+				D9FC0A602A2F280800072FBB /* YBIBImageScrollView.m in Sources */,
+				D9FC0A3E2A2F280800072FBB /* YBIBVideoData.m in Sources */,
+				D9FC0A5E2A2F280800072FBB /* YBIBInteractionProfile.m in Sources */,
+				7AAB3E16257E6A6E00707CF6 /* Request.swift in Sources */,
+				7AAB3E17257E6A6E00707CF6 /* ReplyNotification.swift in Sources */,
+				7AAB3E18257E6A6E00707CF6 /* Storage.swift in Sources */,
+				D9FC0A702A2F280800072FBB /* YBIBSentinel.m in Sources */,
+				D9FC0A682A2F280800072FBB /* YBIBToastView.m in Sources */,
+				D9FC0A7C2A2F280800072FBB /* YBIBSheetView.m in Sources */,
+				D9FC09D32A2F279400072FBB /* JSToNativeManager.m in Sources */,
+				7AAB3E19257E6A6E00707CF6 /* Push.swift in Sources */,
+				D90FC9892B8C982A00455C39 /* NativeToJSManager.m in Sources */,
+				7AAB3E1A257E6A6E00707CF6 /* RoomType.swift in Sources */,
+				D9FC0A782A2F280800072FBB /* YBIBTopView.m in Sources */,
+				7AAB3E1B257E6A6E00707CF6 /* MessageType.swift in Sources */,
+				7AAB3E1C257E6A6E00707CF6 /* PushResponse.swift in Sources */,
+				D9FC0A7E2A2F280800072FBB /* YBIBScreenRotationHandler.m in Sources */,
+				7A92554728777E0100EC3DA3 /* AppDelegate.mm in Sources */,
+				7AAB3E1E257E6A6E00707CF6 /* Encryption.swift in Sources */,
+				D9FC0A5C2A2F280800072FBB /* YBImage.m in Sources */,
+				7AAB3E1F257E6A6E00707CF6 /* RocketChat.swift in Sources */,
+				D9FC0A422A2F280800072FBB /* YBIBVideoView.m in Sources */,
+				D9FC0A4E2A2F280800072FBB /* YYImage.m in Sources */,
+				7AAB3E20257E6A6E00707CF6 /* HTTPMethod.swift in Sources */,
+				7AAB3E21257E6A6E00707CF6 /* Payload.swift in Sources */,
+				D9FC0A502A2F280800072FBB /* YYImageCoder.m in Sources */,
+				D9FC0A722A2F280800072FBB /* YBIBCopywriter.m in Sources */,
+				7AAB3E23257E6A6E00707CF6 /* Data+Extensions.swift in Sources */,
+				D9FC0A622A2F280800072FBB /* YBIBImageCache.m in Sources */,
+				D9FC0A802A2F280800072FBB /* YBIBContainerView.m in Sources */,
+				7AAB3E24257E6A6E00707CF6 /* Date+Extensions.swift in Sources */,
+				D9FC0A582A2F280800072FBB /* YBImageBrowser.m in Sources */,
+				7AAB3E25257E6A6E00707CF6 /* Database.swift in Sources */,
+				D9FC0A6C2A2F280800072FBB /* YBIBAuxiliaryViewHandler.m in Sources */,
+				7AAB3E26257E6A6E00707CF6 /* String+Extensions.swift in Sources */,
+				7AAB3E27257E6A6E00707CF6 /* Notification.swift in Sources */,
+				D9FC0A762A2F280800072FBB /* YBIBPhotoAlbumManager.m in Sources */,
+				D9FC0A6A2A2F280800072FBB /* YBIBLoadingView.m in Sources */,
+				7AAB3E28257E6A6E00707CF6 /* API.swift in Sources */,
+				D9FC0A742A2F280800072FBB /* YBIBUtilities.m in Sources */,
+				D9FC0A882A2F280800072FBB /* YBIBAnimatedTransition.m in Sources */,
+				D9FC0A3C2A2F280800072FBB /* YBIBVideoCell.m in Sources */,
+				D9FC0A862A2F280800072FBB /* YBIBCollectionViewLayout.m in Sources */,
+				7AAB3E29257E6A6E00707CF6 /* Response.swift in Sources */,
+				7AAB3E2A257E6A6E00707CF6 /* AppGroup.m in Sources */,
+				7AAB3E2B257E6A6E00707CF6 /* main.m in Sources */,
+				D9FC0A8A2A2F280800072FBB /* NSObject+YBImageBrowser.m in Sources */,
+				7AAB3E2C257E6A6E00707CF6 /* URL+Extensions.swift in Sources */,
+				D9FC0A4A2A2F280800072FBB /* SharkfoodMuteSwitchDetector.m in Sources */,
+				7AAB3E2D257E6A6E00707CF6 /* AppGroup.swift in Sources */,
+				D9FC0A542A2F280800072FBB /* YYAnimatedImageView.m in Sources */,
+				D9FC0A642A2F280800072FBB /* YBIBImageCell.m in Sources */,
+				7AAB3E2E257E6A6E00707CF6 /* RoomKey.swift in Sources */,
+				D9FC0A7A2A2F280800072FBB /* YBIBToolViewHandler.m in Sources */,
+				7AAB3E2F257E6A6E00707CF6 /* Message.swift in Sources */,
+				D9FC0A442A2F280800072FBB /* YBIBVideoActionBar.m in Sources */,
+				D9FC0A4C2A2F280800072FBB /* YYSpriteSheetImage.m in Sources */,
+				7AAB3E30257E6A6E00707CF6 /* NotificationType.swift in Sources */,
+				7AAB3E31257E6A6E00707CF6 /* SendMessage.swift in Sources */,
+				BC404914E86821389EEB543D /* ExpoModulesProvider.swift in Sources */,
+				D9FC0A6E2A2F280800072FBB /* YBIBIconManager.m in Sources */,
+				D9FC0A562A2F280800072FBB /* YBIBDefaultWebImageMediator.m in Sources */,
+				D9FC0A842A2F280800072FBB /* YBIBCollectionView.m in Sources */,
+				D9FC0A5A2A2F280800072FBB /* YBIBImageLayout.m in Sources */,
+				D9FC0A662A2F280800072FBB /* YBIBImageData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC6ACBA22CB9FC300A41C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC6ACAF22CB9FC300A41C61 /* ShareRocketChatRN */;
+			targetProxy = 1EC6ACB922CB9FC300A41C61 /* PBXContainerItemProxy */;
+		};
+		1EFEB59B2493B6640072EDC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFEB5942493B6640072EDC0 /* NotificationService */;
+			targetProxy = 1EFEB59A2493B6640072EDC0 /* PBXContainerItemProxy */;
+		};
+		7AAB3E0E257E6A6E00707CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC6ACAF22CB9FC300A41C61 /* ShareRocketChatRN */;
+			targetProxy = 7AAB3E0F257E6A6E00707CF6 /* PBXContainerItemProxy */;
+		};
+		7AAB3E10257E6A6E00707CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFEB5942493B6640072EDC0 /* NotificationService */;
+			targetProxy = 7AAB3E11257E6A6E00707CF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EC6ACB522CB9FC300A41C61 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EC6ACB622CB9FC300A41C61 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE1E95534E2C71BCEB81ABDB /* Pods-defaults-RocketChatRN.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RocketChatRN/RocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+				);
+				INFOPLIST_FILE = RocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/ios",
+					"$(PROJECT_DIR)/TalkingData",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative;
+				PRODUCT_NAME = "Rocket.Chat Experimental";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RocketChatRN-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E11B71CA7EFE12116E92150 /* Pods-defaults-RocketChatRN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RocketChatRN/RocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+				);
+				INFOPLIST_FILE = RocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/ios",
+					"$(PROJECT_DIR)/TalkingData",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative;
+				PRODUCT_NAME = "Rocket.Chat Experimental";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RocketChatRN-Swift.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1EC6ACBC22CB9FC300A41C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330F4C7CB38DCAFFB5D2F4D2 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ShareRocketChatRN/ShareRocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
+				);
+				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EC6ACBD22CB9FC300A41C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716932D06209A9C4288CEB96 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ShareRocketChatRN/ShareRocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Crashlytics/iOS\"",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
+				);
+				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+				);
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EFEB59D2493B6640072EDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BE95C338CBD0F2ED8A8057 /* Pods-defaults-NotificationService.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 4.38.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EFEB59E2493B6640072EDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A869A59810A3929091F67649 /* Pods-defaults-NotificationService.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 4.38.0;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7AAB3E50257E6A6E00707CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1D5014ABFC384B8CAFEBA0 /* Pods-defaults-Rocket.Chat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RocketChatRN/RocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24042605;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+				);
+				INFOPLIST_FILE = RocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkingData",
+				);
+				MARKETING_VERSION = 0.46.2;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RocketChatRN-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		7AAB3E51257E6A6E00707CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A3AF756639066F66137F91 /* Pods-defaults-Rocket.Chat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RocketChatRN/RocketChatRN.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 24042605;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 76D572M8T4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB/SupportingFiles/**",
+				);
+				INFOPLIST_FILE = RocketChatRN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/TalkingData",
+				);
+				MARKETING_VERSION = 0.46.2;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.appia.reactnative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "appia-dev";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RocketChatRN-Swift.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RocketChatRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC6ACF322CB9FC300A41C61 /* Build configuration list for PBXNativeTarget "ShareRocketChatRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC6ACBC22CB9FC300A41C61 /* Debug */,
+				1EC6ACBD22CB9FC300A41C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFEB5A02493B6640072EDC0 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFEB59D2493B6640072EDC0 /* Debug */,
+				1EFEB59E2493B6640072EDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AAB3E4F257E6A6E00707CF6 /* Build configuration list for PBXNativeTarget "Rocket.Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AAB3E50257E6A6E00707CF6 /* Debug */,
+				7AAB3E51257E6A6E00707CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RocketChatRN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

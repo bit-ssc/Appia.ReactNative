@@ -1,0 +1,143 @@
+import React, { useContext } from 'react';
+import { dequal } from 'dequal';
+import { View } from 'react-native';
+
+import { IMessageAttachments } from './interfaces';
+import Image from './Image';
+import Audio from './Audio';
+import Video from './Video';
+import Reply from './Reply';
+import Button from '../Button';
+import MessageContext from './Context';
+import { useTheme } from '../../theme';
+import { IAttachment, TGetCustomEmoji } from '../../definitions';
+import CollapsibleQuote from './Components/CollapsibleQuote';
+import openLink from '../../utils/openLink';
+import Markdown from '../markdown';
+import styles from './styles';
+
+export type TElement = {
+	type: string;
+	msg?: string;
+	url?: string;
+	text: string;
+};
+
+const AttachedActions = ({ attachment, getCustomEmoji }: { attachment: IAttachment; getCustomEmoji: TGetCustomEmoji }) => {
+	const { onAnswerButtonPress } = useContext(MessageContext);
+
+	if (!attachment.actions) {
+		return null;
+	}
+
+	const attachedButtons = attachment.actions.map((element: TElement) => {
+		const onPress = () => {
+			if (element.msg) {
+				onAnswerButtonPress(element.msg);
+			}
+
+			if (element.url) {
+				openLink(element.url);
+			}
+		};
+
+		if (element.type === 'button') {
+			return <Button onPress={onPress} title={element.text} />;
+		}
+
+		return null;
+	});
+	return (
+		<>
+			<Markdown msg={attachment.text} getCustomEmoji={getCustomEmoji} />
+			{attachedButtons}
+		</>
+	);
+};
+
+const Attachments: React.FC<IMessageAttachments> = React.memo(
+	({ attachments, timeFormat, showAttachment, style, getCustomEmoji, isReply, id, appiaTodo }: IMessageAttachments) => {
+		const { theme } = useTheme();
+
+		if (!attachments || attachments.length === 0) {
+			return null;
+		}
+		const isTodo = appiaTodo && appiaTodo?.status === 0;
+
+		const attachmentsElements = attachments.map((file: IAttachment, index: number) => {
+			if (file && file.image_url) {
+				return (
+					<Image
+						key={file.image_url}
+						file={file}
+						showAttachment={showAttachment}
+						getCustomEmoji={getCustomEmoji}
+						style={style}
+						isReply={isReply}
+					/>
+				);
+			}
+
+			if (file && file.audio_url) {
+				return (
+					<Audio
+						key={file.audio_url}
+						file={file}
+						getCustomEmoji={getCustomEmoji}
+						isReply={isReply}
+						style={style}
+						theme={theme}
+						messageId={id}
+					/>
+				);
+			}
+
+			if (file.video_url) {
+				return (
+					<Video
+						key={file.video_url}
+						file={file}
+						showAttachment={showAttachment}
+						getCustomEmoji={getCustomEmoji}
+						style={style}
+						isReply={isReply}
+					/>
+				);
+			}
+
+			if (file && file.actions && file.actions.length > 0) {
+				return <AttachedActions attachment={file} getCustomEmoji={getCustomEmoji} />;
+			}
+			if (typeof file.collapsed === 'boolean') {
+				return (
+					<CollapsibleQuote key={index} index={index} attachment={file} timeFormat={timeFormat} getCustomEmoji={getCustomEmoji} />
+				);
+			}
+
+			return (
+				<Reply
+					key={index}
+					index={index}
+					attachment={file}
+					timeFormat={timeFormat}
+					getCustomEmoji={getCustomEmoji}
+					messageId={id}
+				/>
+			);
+		});
+		return <View style={[{ padding: 2 }, isTodo ? styles.msgTodo : null]}>{attachmentsElements}</View>;
+	},
+	(prevProps, nextProps) => {
+		if (!dequal(prevProps.attachments, nextProps.attachments)) {
+			return false;
+		}
+		if (!dequal(prevProps.appiaTodo, nextProps.appiaTodo)) {
+			return false;
+		}
+		return true;
+	}
+);
+
+Attachments.displayName = 'MessageAttachments';
+
+export default Attachments;

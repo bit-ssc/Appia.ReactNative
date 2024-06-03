@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "xxxxxxxxxx",
+    "firebase_url": "https://appia-reactnative-default-rtdb.firebaseio.com",
+    "project_id": "appia-reactnative",
+    "storage_bucket": "appia-reactnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:xxxxxxxxxx:android:123123",
+        "android_client_info": {
+          "package_name": "cn.appia.im"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "xxxxxxxxxx-mb74df2l2ek5pcbs0m9of663medhib91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPhgLItegKwCcr_DhyCwhIh8N3nIHgEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "xxxxxxxxxx-mb74df2l2ek5pcbs0m9of663medhib91.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "xxxxxxxxxx-t4rod2tnng2s21bq2hfut7oufttt0cne.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cn.appia.reactnative"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

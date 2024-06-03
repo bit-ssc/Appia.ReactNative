@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/ip_color_primary"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_back_press"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/btn_back"
+        android:background="#2E2E32" />
+
+    <RelativeLayout
+        android:id="@+id/ll_dir"
+        android:layout_toRightOf="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_button_background"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/ip_all_images"
+            android:textColor="#CFCFCF"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_dir"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/tv_dir"
+            android:src="@mipmap/text_indicator" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/btn_back"
+        android:text="图片"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/selector_top_ok"
+        android:minWidth="48dp"
+        android:minHeight="30dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="完成(0/3)"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_del"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_back_press"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_vector_delete"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorEdgeEffect">#aaaaaa</item>
+        <item name="colorPrimaryDark">@color/splashBackground</item>
+        <item name="android:navigationBarColor">@color/splashBackground</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- RN 0.68.2 -->
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item> 
+    </style>
+
+    <style name="ShareTheme" parent="AppTheme">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="BootTheme" parent="Theme.SplashScreen">
+      <item name="windowSplashScreenBackground">@color/splashBackground</item>
+      <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+      <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
+    <!--  https://github.com/facebook/react-native/blob/d1ab03235cb4b93304150878d2b9057ab45bba77/ReactAndroid/src/main/res/views/modal/values/themes.xml#L5  -->
+    <style name="Theme.FullScreenDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!--SuperCheckbox的样式-->
+    <style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_item_checked</item>
+    </style>
+
+    <style name="popupwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+</resources>

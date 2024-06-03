@@ -1,0 +1,208 @@
+import Model from '@nozbe/watermelondb/Model';
+import Relation from '@nozbe/watermelondb/Relation';
+
+import { ILastMessage, TMessageModel } from './IMessage';
+import { IRocketChatRecord } from './IRocketChatRecord';
+import { IOmnichannelSource, IRoomAnnouncement, RoomID, RoomType } from './IRoom';
+import { IServedBy } from './IServedBy';
+import { TThreadModel } from './IThread';
+import { TThreadMessageModel } from './IThreadMessage';
+import { TUploadModel } from './IUpload';
+import { IUser } from './IUser';
+
+export enum SubscriptionType {
+	GROUP = 'p',
+	DIRECT = 'd',
+	CHANNEL = 'c',
+	OMNICHANNEL = 'l',
+	E2E = 'e2e', // FIXME: this is not a type of subscription
+	THREAD = 'thread', // FIXME: this is not a type of subscription
+	BOT = 'b'
+}
+
+export interface IVisitor {
+	_id?: string;
+	token?: string;
+	status: 'online' | 'busy' | 'away' | 'offline';
+	username?: string;
+	lastMessageTs?: Date;
+}
+
+export enum ERoomTypes {
+	DIRECT = 'direct',
+	GROUP = 'group',
+	CHANNEL = 'channel'
+}
+
+type RelationModified<T extends Model> = { fetch(): Promise<T[]> } & Relation<T>;
+
+export interface ISubscription {
+	_id: string;
+	id: string;
+	_updatedAt?: string;
+	v?: IVisitor;
+	f: boolean;
+	t: SubscriptionType; // TODO: we need to review this type later
+	ts: string | Date;
+	ls: Date;
+	name: string;
+	fname?: string;
+	sanitizedFname?: string;
+	rid: string; // the same as id
+	open: boolean;
+	alert: boolean;
+	roles?: string[];
+	unread: number;
+	lm: string;
+	lr: string;
+	userMentions: number;
+	groupMentions: number;
+	tunread: string[];
+	tunreadUser?: string[];
+	tunreadGroup?: string[];
+	roomUpdatedAt: Date | number;
+	ro: boolean;
+	lastOpen?: Date;
+	description?: string;
+	announcement?: IRoomAnnouncement;
+	bannerClosed?: boolean;
+	topic?: string;
+	blocked?: boolean;
+	blocker?: boolean;
+	reactWhenReadOnly?: boolean;
+	archived: boolean;
+	joinCodeRequired?: boolean;
+	muted?: string[];
+	ignored?: string[];
+	broadcast?: boolean;
+	prid?: string;
+	draftMessage?: string | null;
+	lastThreadSync?: Date;
+	jitsiTimeout?: Date;
+	autoTranslate?: boolean;
+	autoTranslateLanguage?: string;
+	lastMessage?: ILastMessage | null; // TODO: we need to use IMessage here
+	hideUnreadStatus?: boolean;
+	sysMes?: string[] | boolean;
+	uids?: string[];
+	usernames?: string[];
+	visitor?: IVisitor;
+	departmentId?: string;
+	status?: string;
+	servedBy?: IServedBy;
+	livechatData?: any;
+	tags?: string[];
+	E2EKey?: string;
+	E2ESuggestedKey?: string;
+	encrypted?: boolean;
+	e2eKeyId?: string;
+	avatarETag?: string;
+	teamId?: string;
+	teamMain?: boolean;
+	unsubscribe: () => Promise<any>;
+	separator?: boolean;
+	onHold?: boolean;
+	source?: IOmnichannelSource;
+	hideMentionStatus?: boolean;
+	usersCount?: number;
+	// https://nozbe.github.io/WatermelonDB/Relation.html#relation-api
+	messages: RelationModified<TMessageModel>;
+	threads: RelationModified<TThreadModel>;
+	threadMessages: RelationModified<TThreadMessageModel>;
+	uploads: RelationModified<TUploadModel>;
+	federated?: boolean;
+	rt?: string;
+	dname?: string;
+	onCallStatus?: boolean;
+	callMsg?: string;
+	todoCount?: number;
+	bot?: boolean;
+	welcomeMsg?: boolean;
+	memberName?: string;
+	memberNumber?: number;
+	showAppiaTag?: number;
+	isRoomToDo?: boolean;
+	defaultTodoCount?: number;
+	highTodoCount?: number;
+	like?: boolean;
+	isSubItem?: boolean;
+	tSearch?: Date | number;
+}
+
+export enum SectionHeaderType {
+	TODO = 'todo',
+	MESSAGE = 'message',
+	SPONSOR = 'sponsor',
+	LIKE = 'like',
+	NORMAL = 'normal'
+}
+
+export interface RoomListSectionHeader {
+	headTitle?: string;
+	isHeadClose?: boolean;
+	rowNum?: number;
+	showRowNum?: boolean;
+	headerType?: SectionHeaderType;
+	isCanClose?: boolean;
+	isSubHeader?: boolean;
+	isUnderline?: boolean;
+}
+
+export type TSubscriptionModel = ISubscription & Model & RoomListSectionHeader;
+export type TSubscription = TSubscriptionModel | ISubscription;
+
+// https://github.com/RocketChat/Rocket.Chat/blob/a88a96fcadd925b678ff27ada37075e029f78b5e/definition/ISubscription.ts#L8
+export interface IServerSubscription extends IRocketChatRecord {
+	u: Pick<IUser, '_id' | 'username' | 'name'>;
+	v?: Pick<IUser, '_id' | 'username' | 'name'>;
+	rid: RoomID;
+	open: boolean;
+	ts: Date;
+
+	name: string;
+
+	alert?: boolean;
+	unread: number;
+	t: RoomType;
+	ls: Date;
+	f?: true;
+	lr: Date;
+	hideUnreadStatus?: true;
+	teamMain?: boolean;
+	teamId?: string;
+
+	userMentions: number;
+	groupMentions: number;
+
+	tunread?: Array<string>;
+	tunreadGroup?: Array<string>;
+	tunreadUser?: Array<string>;
+
+	prid?: RoomID;
+
+	roles?: string[];
+
+	onHold?: boolean;
+	encrypted?: boolean;
+	E2EKey?: string;
+	E2ESuggestedKey?: string;
+	unreadAlert?: 'default' | 'all' | 'mentions' | 'nothing';
+
+	fname?: unknown;
+
+	code?: unknown;
+	archived?: unknown;
+	audioNotificationValue?: unknown;
+	desktopNotifications?: unknown;
+	mobilePushNotifications?: unknown;
+	emailNotifications?: unknown;
+	blocked?: unknown;
+	blocker?: unknown;
+	autoTranslate?: unknown;
+	autoTranslateLanguage?: unknown;
+	disableNotifications?: unknown;
+	muteGroupMentions?: unknown;
+	ignored?: unknown;
+
+	department?: unknown;
+}

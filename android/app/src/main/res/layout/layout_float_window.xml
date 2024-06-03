@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/voice_chat_window_background"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_bg"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher" />
+                        <TextView
+                            android:id="@+id/text"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Appia"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="00:00"
+                                    android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/m_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Appia"
+                                    android:textColor="#000"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:text="语音通话"
+                                    android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/voice_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/voice_chat_icon" />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

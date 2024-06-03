@@ -1,0 +1,24 @@
+diff --git a/node_modules/react-native-camera/ios/RN/RNImageUtils.m b/node_modules/react-native-camera/ios/RN/RNImageUtils.m
+index 5a8c9c9..73bca96 100644
+--- a/node_modules/react-native-camera/ios/RN/RNImageUtils.m
++++ b/node_modules/react-native-camera/ios/RN/RNImageUtils.m
+@@ -11,6 +11,9 @@ @implementation RNImageUtils
+ 
+ + (UIImage *)generatePhotoOfSize:(CGSize)size
+ {
++    if (size.width == 0 || size.height == 0) {
++        return [[UIImage alloc] init];
++    }
+     CGRect rect = CGRectMake(0, 0, size.width, size.height);
+     UIImage *image;
+     UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+@@ -86,6 +89,9 @@ + (UIImage *) scaleImage:(UIImage*)image toWidth:(NSInteger)width
+ + (UIImage *)forceUpOrientation:(UIImage *)image
+ {
+     if (image.imageOrientation != UIImageOrientationUp) {
++        if (image.size.width == 0 || image.size.height == 0) {
++            return [[UIImage alloc] init];
++        }
+         UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+         [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+         image = UIGraphicsGetImageFromCurrentImageContext();

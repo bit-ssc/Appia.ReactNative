@@ -1,0 +1,57 @@
+diff --git a/node_modules/react-native-progress/Circle.js b/node_modules/react-native-progress/Circle.js
+index 79f0a9e..63116ba 100644
+--- a/node_modules/react-native-progress/Circle.js
++++ b/node_modules/react-native-progress/Circle.js
+@@ -136,6 +136,7 @@ export class ProgressCircle extends Component {
+                 }
+               : undefined
+           }
++          color={fill}
+         >
+           {unfilledColor && progressValue !== 1 ? (
+             <Shape
+@@ -174,6 +175,7 @@ export class ProgressCircle extends Component {
+               stroke={borderColor || color}
+               strokeCap={strokeCap}
+               strokeWidth={border}
++              fill={'transparent'}
+             />
+           ) : (
+             false
+diff --git a/node_modules/react-native-progress/CircleSnail.js b/node_modules/react-native-progress/CircleSnail.js
+index cdf2b2d..c274f3d 100644
+--- a/node_modules/react-native-progress/CircleSnail.js
++++ b/node_modules/react-native-progress/CircleSnail.js
+@@ -27,6 +27,7 @@ export default class CircleSnail extends Component {
+     thickness: PropTypes.number,
+     strokeCap: PropTypes.string,
+     useNativeDriver: PropTypes.bool,
++    fill: PropTypes.string,
+   };
+ 
+   static defaultProps = {
+@@ -38,6 +39,7 @@ export default class CircleSnail extends Component {
+     thickness: 3,
+     strokeCap: 'round',
+     useNativeDriver: false,
++    fill: 'transparent',
+   };
+ 
+   constructor(props) {
+@@ -129,6 +131,7 @@ export default class CircleSnail extends Component {
+       style,
+       thickness,
+       strokeCap,
++      fill,
+       ...restProps
+     } = this.props;
+ 
+@@ -163,7 +166,7 @@ export default class CircleSnail extends Component {
+           },
+         ]}
+       >
+-        <Svg width={size} height={size}>
++        <Svg width={size} height={size} fill={fill}>
+           <AnimatedArc
+             direction={
+               direction === 'counter-clockwise'
