@@ -1,4 +1,12 @@
-# Rocket.Chat Mobile
+<div align='center'>
+  <img src="https://github.com/bit-ssc/Appia/assets/15917128/66b43886-0427-4518-9740-6de93974801b" width="500" />
+</div>
+
+<h1 align="center">
+  Appia is an IM software for enterprise internal communication, including multiple modules and functions such as projects, channels, robots, labor, OA, and external system access
+</h1>
+
+# Appia Mobile
 
 - **Supported server versions:** 0.70.0+
 - **Supported iOS versions**: 12+
@@ -6,14 +14,11 @@
 
 ## Download
 
-<a href="https://play.google.com/store/apps/details?id=chat.rocket.android">
-  <img alt="Download on Google Play" src="https://play.google.com/intl/en_us/badges/images/badge_new.png" height=43>
-</a>
-<a href="https://apps.apple.com/us/app/rocket-chat/id1148741252">
+<a href="https://apps.apple.com/us/app/appia/id1630882554?l=zh-Hans-CN">
   <img alt="Download on App Store" src="https://user-images.githubusercontent.com/7317008/43209852-4ca39622-904b-11e8-8ce1-cdc3aee76ae9.png" height=43>
 </a>
 
-Check [our docs](https://docs.rocket.chat/use-rocket.chat/rocket.chat-mobile) for  beta and Experimental versions.
+
 
 ## Reporting an Issue
 
